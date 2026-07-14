@@ -66,7 +66,7 @@ hex_sticker <- ggplot() +
     "text", x = 0, y = -0.48, 
     label = "Introduction to Statistics\nand Data Science", 
     color = "#FFFFFF", 
-    size = 4.5, 
+    size = 7, 
     fontface = "bold", 
     family = "sans", 
     lineheight = 1.1
