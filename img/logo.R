@@ -1,27 +1,21 @@
-# Produced with a lot of help from Gemini
-
 library(ggplot2)
 
 # --- 1. Define Pointed-Top Hexagon Vertices (Continuous Clockwise) ---
-# Radius = 1. Width from far left to far right is exactly sqrt(3) ~ 1.732
 hex_x <- c(0,  0.866,  0.866, 0, -0.866, -0.866)
 hex_y <- c(1,  0.5,   -0.5,  -1, -0.5,    0.5)
 
 # --- 2. Define the Central Trend Line Split ---
-# The line must start exactly at the left edge (-0.866) and end at the right edge (0.866)
 line_data <- data.frame(
   x = c(-0.866, -0.5, -0.15,  0.2,  0.5, 0.866),
   y = c(-0.1,    0.2, -0.1,   0.3,  0.0, 0.1)
 )
 
 # --- 3. Construct Flawless Solid Polygons (No Gaps) ---
-# Top Half: Trace the line left-to-right, then close up around the upper hex points
 top_bg <- data.frame(
   x = c(line_data$x, 0.866, 0, -0.866),
   y = c(line_data$y, 0.5,   1,  0.5)
 )
 
-# Bottom Half: Trace the line left-to-right, then close down around the lower hex points
 bottom_bg <- data.frame(
   x = c(line_data$x, 0.866, 0, -0.866),
   y = c(line_data$y, -0.5, -1, -0.5)
@@ -39,9 +33,9 @@ hex_sticker <- ggplot() +
   # Layer 3: White Dividing Trend Line
   geom_line(data = line_data, aes(x = x, y = y), color = "#FFFFFF", linewidth = 2.5) +
   
-  # Layer 4: Custom Data Points (Hollow Style: White Border, Crimson Center)
+  # Layer 4: Custom Data Points
   geom_point(
-    data = line_data[-c(1, 6), ], # Drop the boundary anchor points
+    data = line_data[-c(1, 6), ], 
     aes(x = x, y = y), 
     color = "#FFFFFF", 
     fill  = "#A51C30", 
@@ -51,7 +45,7 @@ hex_sticker <- ggplot() +
   ) +
   
   # Layer 5: Typography
-  # Course Code (Neatly placed in the upper black panel)
+  # Course Code
   annotate(
     "text", x = 0, y = 0.52, 
     label = "STAT 100", 
@@ -61,7 +55,7 @@ hex_sticker <- ggplot() +
     family = "sans"
   ) +
   
-  # Course Title (Neatly wrapped in the lower crimson panel)
+  # Course Title
   annotate(
     "text", x = 0, y = -0.48, 
     label = "Introduction to Statistics\nand Data Science", 
@@ -72,7 +66,20 @@ hex_sticker <- ggplot() +
     lineheight = 1.1
   ) +
   
-  # Layer 6: Heavy Outer Hexagon Frame Border (Masking the canvas)
+  # Website URL (Aligned along the bottom-right angled edge)
+  annotate(
+    "text", 
+    x = 0.64, y = -0.53,              # Positioned along the inner bottom-right edge
+    label = "stat-100.com", 
+    color = "#FFFFFF", 
+    size = 2.8, 
+    angle = 30,                       # Angles the text parallel to the border
+    fontface = "bold", 
+    family = "sans",
+    alpha = 0.85                      # Soft transparency to keep main text focused
+  ) +
+  
+  # Layer 6: Heavy Outer Hexagon Frame Border
   geom_polygon(
     data = data.frame(x = hex_x, y = hex_y), 
     aes(x = x, y = y), 
@@ -81,7 +88,7 @@ hex_sticker <- ggplot() +
     linewidth = 4
   ) +
   
-  # Fixed coordinate scaling and canvas stripping
+  # Coordinate scaling & stripping
   coord_fixed(xlim = c(-0.9, 0.9), ylim = c(-1.05, 1.05)) +
   theme_void() +
   theme(
@@ -90,21 +97,5 @@ hex_sticker <- ggplot() +
   )
 
 # --- 5. Export Final Image ---
-ggsave(
-  filename = "logo/stat100-logo-square.png", 
-  plot = hex_sticker, 
-  width = 5, 
-  height = 5, 
-  dpi = 300, 
-  bg = "transparent"
-)
-
-# Changing width to 4.33 matches the exact mathematical aspect ratio of the hex
-ggsave(
-  filename = "logo/stat100-logo-rectangle.png", 
-  plot = hex_sticker, 
-  width = 4.33,   # Adjusted from 5 to trim the transparent side margins
-  height = 5, 
-  dpi = 300, 
-  bg = "transparent"
-)
+ggsave("logo/stat100-logo-square.png", plot = hex_sticker, width = 5, height = 5, dpi = 300, bg = "transparent")
+ggsave("logo/stat100-logo-rectangle.png", plot = hex_sticker, width = 4.33, height = 5, dpi = 300, bg = "transparent")
