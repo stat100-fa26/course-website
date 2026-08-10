@@ -1,5 +1,5 @@
 name: Render and Deploy Quarto
-
+  run: quarto render --output-dir _site
 on:
   push:
     branches:
