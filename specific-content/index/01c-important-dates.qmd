@@ -1,0 +1,7 @@
+**Midterm exam** on {{< var course.midterm >}} during lecture time, location TBD
+
+**Project proposal** due {{< var course.proposal >}} on GitHub
+
+**Project submission** due {{< var course.final-submission >}} on GitHub
+
+**Final Exam** on {{< var course.final-exam >}} in person

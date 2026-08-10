@@ -1,0 +1,1 @@
+We use Plausible Analytics to measure site traffic and understand general usage patterns. Plausible is a privacy-first service that does not use cookies, does not collect personal data or IP addresses, and does not track users across sites.

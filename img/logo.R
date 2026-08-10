@@ -69,7 +69,7 @@ hex_sticker <- ggplot() +
   # Website URL (Aligned along the bottom-right angled edge)
   annotate(
     "text", 
-    x = 0.64, y = -0.53,              # Positioned along the inner bottom-right edge
+    x = 0.12, y = -0.85,              # Positioned along the inner bottom-right edge
     label = "stat-100.com", 
     color = "#FFFFFF", 
     size = 2.8, 

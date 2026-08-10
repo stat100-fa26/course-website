@@ -1,0 +1,58 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: STAT 100
+  search: true
+  site-url: "https://stat-100.com/"
+  navbar:
+    logo: "img/logo.png"
+    logo-alt: A hex logo with a heavy black border, split horizontally by a white zigzag line chart featuring four hollow crimson data points. The top half is solid black with the bold white text "STAT 100", and the bottom half is solid crimson with the white text "Introduction to Statistics and Data Science".The hyperlink stat-100.com is provided.
+    pinned: true
+    background: whitesmoke
+    foreground: "#333333"
+    left:
+      - href: "index.qmd"
+        text: "{{< fa home >}} Home"      
+      - href: "people.qmd"
+        text: "{{< fa chalkboard-teacher >}} People"
+      - href: "policies.qmd"
+        text: "{{< fa gavel >}} Policies"
+      - href: "schedule.qmd"
+        text: "{{< fa calendar >}} Schedule"
+      - href: "tools.qmd"
+        text: "{{< fa toolbox >}} Tools"
+      - href: "resources.qmd"
+        text: "{{< fa medal >}} Resources"
+    right:
+    - icon: github
+      href: "{{< var course.github-org >}}"
+      aria-label: "GitHub Organization"
+    - icon: robot
+      href: "{{< var course.classchat >}}"
+      aria-label: "Class Chat"
+    - icon: patch-question
+      href: "{{< var course.discussion >}}"
+      aria-label: "Discussion"
+    - icon: calculator
+      href: "{{< var course.lms >}}"
+      aria-label: "Gradebook"
+    - icon: bar-chart-steps
+      href: "{{< var course.gradescope >}}"
+      aria-label: "Gradescope"
+  
+  
+  page-footer:
+      center: 
+        - text: 	"&copy; {{< var course.year >}} <a href=\" {{< var instructor.website >}} \">{{< var instructor.name >}} </a> <br> <a href=\"https://creativecommons.org/licenses/by-nc-nd/4.0/\"> CC BY-NC-ND 4.0 </a> <br> <a href=\"privacy.html\">Privacy Statement</a>"
+        
+format:
+  html:
+    theme: cosmo
+    css: style.css
+    toc: true
+    include-after-body: plausible.html
+
+
+

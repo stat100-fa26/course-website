@@ -1,0 +1,3 @@
+Introduction to key ideas underlying statistical and quantitative reasoning, and the practice of data science. Course topics include methods for organizing, summarizing and visualizing data; basics of probability; elements of study design; data ethics; parameter estimation and hypothesis testing in one- and two-sample problems; regression with one or more predictors; and basic analysis of categorical data. Students will learn a reproducible workflow for analyzing data in the statistics package R. 
+
+**Prerequisite**: No prior statistics or computing knowledge is assumed.
