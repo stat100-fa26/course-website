@@ -5,5 +5,6 @@ title: "404: Missing Data Point"
 
 ### Oops! You found a missing value (`NA`).
 
-You clicked a link expecting a page, but got a 404 error instead.  
+You clicked a link expecting a page, but got a 404 error instead.
+The page you are looking for is missing.
 
