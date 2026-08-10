@@ -35,7 +35,7 @@ Office Hours: <br> {{< var instructor.office-hours >}}
 [{{< var preceptor.email >}}](mailto:{{< var preceptor.email >}}){aria-label="Email the TA"}
 
 <img src="img/preceptor.jpeg" class="rounded-circle center mx-auto d-block"
-     alt="A headshot of a man wearing a navy blue jacket"
+     alt="A headshot of a woman with long straight hair and glasses."
      style="float: left; margin-right: 10px; width: 100%; padding-bottom:20px;" />
      
 
