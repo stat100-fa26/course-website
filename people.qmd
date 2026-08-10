@@ -1,10 +1,14 @@
 
+
+## Instructor
+
 :::: {.columns}
 
-::: {.column width="45%"}
+::: {.column width="25%"}
 
-**Instructor**
+:::
 
+::: {.column width="50%"}
 [{{< fa volume-high >}}](audio/instructor.mp3){aria-label="Play audio pronunciation of professor name"} {{< var instructor.name >}}   
 {{< var instructor.pronoun >}}  
 [{{< var instructor.email >}}](mailto:{{< var instructor.email >}}){aria-label="Email the instructor"}
@@ -19,14 +23,25 @@ Office Hours: <br> {{< var instructor.office-hours >}}
 {{< fa building-columns title="Office Location" >}} {{< var instructor.office >}}  
 [{{< fa video >}}  Zoom]({{< var instructor.zoom >}}){aria-label="Join Zoom meeting with the prof"}
 
+:::
+
+::: {.column width="25%"}
 
 :::
 
-::: {.column width="5%"}
+::::
+
+## Preceptor
+
+
+:::: {.columns}
+
+::: {.column width="25%"}
 
 :::
 
-::: {.column width="45%"}
+::: {.column width="50%"}
+
 
 **Preceptor**
 
@@ -44,16 +59,17 @@ Office Hours: <br> {{< var preceptor.office-hours >}}
 {{< fa building-columns title="Office Location" >}} {{< var preceptor.office >}}  
 [{{< fa video >}}  Zoom]({{< var preceptor.zoom >}}){aria-label="Join Zoom meeting with the TA"}
 
-
-
 :::
 
+::: {.column width="25%"}
 
+:::
 
 ::::
 
 
-**Course Assistants** 
+
+## Course Assistants
 
 TBD
 
