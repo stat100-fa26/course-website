@@ -4,54 +4,53 @@
 
 :::: {.columns}
 
-::: {.column width="25%"}
+::: {.column width="30%"}
+<img src="img/instructor.jpeg" class="rounded-circle center mx-auto d-block"
+     alt="A headshot of a woman with curly, short hair with green eyes and small almost-round glasses."
+     style="float: left; margin-right: 10px; width: 100%; padding-bottom:20px;" />
+:::
+
+::: {.column width="5%"}
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="45%"}
 [{{< fa volume-high >}}](audio/instructor.mp3){aria-label="Play audio pronunciation of professor name"} {{< var instructor.name >}}   
 {{< var instructor.pronoun >}}  
 [{{< var instructor.email >}}](mailto:{{< var instructor.email >}}){aria-label="Email the instructor"}
 
-<img src="img/instructor.jpeg" class="rounded-circle center mx-auto d-block"
-     alt="A headshot of a woman with curly, short hair with green eyes and small almost-round glasses."
-     style="float: left; margin-right: 10px; width: 100%; padding-bottom:20px;" />
-     
 
-Office Hours: <br> {{< var instructor.office-hours >}} 
+<br>Office Hours: <br> {{< var instructor.office-hours >}} 
 
 {{< fa building-columns title="Office Location" >}} {{< var instructor.office >}}  
 [{{< fa video >}}  Zoom]({{< var instructor.zoom >}}){aria-label="Join Zoom meeting with the prof"}
 
 :::
 
-::: {.column width="25%"}
 
-:::
 
 ::::
 
 ## Preceptor
 
-
 :::: {.columns}
 
-::: {.column width="25%"}
+::: {.column width="30%"}
+<img src="img/preceptor.jpeg" class="rounded-circle center mx-auto d-block"
+     alt="A headshot of a woman with long straight hair and glasses."
+     style="float: left; margin-right: 10px; width: 100%; padding-bottom:20px;" />
+:::
+
+::: {.column width="5%"}
 
 :::
 
-::: {.column width="50%"}
-
-
-**Preceptor**
-
+::: {.column width="45%"}
 [{{< fa volume-high >}}](audio/preceptor.mp3){aria-label="Play audio pronunciation of Preceptor name"} {{< var preceptor.name >}}   
 {{< var preceptor.pronoun >}}  
 [{{< var preceptor.email >}}](mailto:{{< var preceptor.email >}}){aria-label="Email the TA"}
 
-<img src="img/preceptor.jpeg" class="rounded-circle center mx-auto d-block"
-     alt="A headshot of a woman with long straight hair and glasses."
-     style="float: left; margin-right: 10px; width: 100%; padding-bottom:20px;" />
+
      
 
 Office Hours: <br> {{< var preceptor.office-hours >}} 
@@ -59,13 +58,15 @@ Office Hours: <br> {{< var preceptor.office-hours >}}
 {{< fa building-columns title="Office Location" >}} {{< var preceptor.office >}}  
 [{{< fa video >}}  Zoom]({{< var preceptor.zoom >}}){aria-label="Join Zoom meeting with the TA"}
 
-:::
-
-::: {.column width="25%"}
 
 :::
+
+
 
 ::::
+
+
+
 
 
 
