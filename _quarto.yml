@@ -53,7 +53,9 @@ format:
     css: style.css
     toc: true
     include-after-body: plausible.html
-
+    include-in-header:
+      - text: |
+          <script src="fix-accessibility.js" defer></script>
 execute:
   freeze: auto   
 
