@@ -5,4 +5,4 @@ By the end of this course you will be able to:
 - make predictions and conclusions using models;  
 - make conclusions about population using sample data, by applying statistical inference techniques;
 - consider impact of decisions related to data on humans, other livings, and the planet;  
-- write human- and machine-readable code using R.
+- write human- and machine-readable code using R with reproducible workflows using Quarto, Git, and GitHub.
