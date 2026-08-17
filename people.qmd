@@ -48,7 +48,7 @@
 ::: {.column width="45%"}
 [{{< fa volume-high >}}](audio/preceptor.mp3){aria-label="Play audio pronunciation of Preceptor name"} {{< var preceptor.name >}}   
 {{< var preceptor.pronoun >}}  
-[{{< var preceptor.email >}}](mailto:{{< var preceptor.email >}}){aria-label="Email the TA"}
+[{{< var preceptor.email >}}](mailto:{{< var preceptor.email >}}){aria-label="Email the preceptor"}
 
 
      
@@ -56,7 +56,7 @@
 Office Hours: <br> {{< var preceptor.office-hours >}} 
 
 {{< fa building-columns title="Office Location" >}} {{< var preceptor.office >}}  
-[{{< fa video >}}  Zoom]({{< var preceptor.zoom >}}){aria-label="Join Zoom meeting with the TA"}
+
 
 
 :::
