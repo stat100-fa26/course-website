@@ -9,7 +9,8 @@ It is my intent to design assessments that are a source of intellectual curiosit
 
 ### In-Class Quizzes
 
-In-Class quizzes are opportunity to practice as you are learning during the lectures. The questions will be asked sporadically throughout the lectures. You can discuss quiz questions with your neighbors in class, check notes, use internet etc. You will be graded for participation, not for correctness. You need to be attending the lecture and respond to all questions in order to receive the participation point. If you are not participating in lecture or have someone else participate for quizzes on your behalf, this will be considered academic misconduct. Note that during week zero we will have online quizzes for onboarding purposes which will be graded for correctness.
+In-Class quizzes provide an opportunity to practice as you are learning during the lectures. The questions will be asked sporadically throughout the lectures. You can discuss quiz questions with your neighbors in class, check notes, use internet etc. You will be graded for participation, not for correctness. You need to be attending the lecture and respond to all questions in order to receive the participation point. If you are not participating in lecture or have someone else participate for quizzes on your behalf, this will be considered academic misconduct. Note that during week zero we will have online quizzes for onboarding purposes which will be graded for correctness.
+In other words, these online quizzes will get you ready for the first day of class.
 
 ### Section Activities
 
@@ -29,14 +30,14 @@ For homework assignments, you can use books and notes, talk to other people in y
 
 ### Midterm Exam
 
-Midterm exam will be held in-person, in-class on {{< var course.midterm >}}. 
+Midterm exam will be held in-person on {{< var course.midterm >}} at {{< var course.midterm-location >}}. 
 You will work individually on the exam.
 It will be a closed-book exam.
 You will not need a calculator and thus you will not be allowed to use one.
 
 ### Final Exam
 
-Final exam will be held in-person, in-class on {{< var course.final-exam >}}. 
+Final exam will be held in-person on {{< var course.final-exam >}} at {{< var course.final-exam-location >}}. 
 You will work individually on the exam.
 It will be a closed-book exam.
 You will not need a calculator and thus you will not be allowed to use one.
@@ -131,7 +132,7 @@ Make sure to include the assignment number, question number, and why you think t
 
 ### Office Hours
 
-The teaching team, including the instructor, preceptor, and the teaching team have several office hours that you can attend. You can attend office hours for several reasons for asking questions about the course content, assignments, statistics careers, or simply to say hi because we love having our students in Maxwell-Dworkin. 
+The teaching team, including the instructor, preceptor, and the teaching team have several office hours that you can attend. You can attend office hours for several reasons for asking questions about the course content, assignments, statistics careers, or simply to say hi because we love seeing our students during office hours. 
 
 You can find the schedule for office hours under the <a href="people.html">People </a> tab and on the Google calendar on the  <a href="index.html">Home</a> page.
 
@@ -173,7 +174,7 @@ Collaborative learning and AI tools can be incredible assets for mastering cours
 
 - **Match Course Conventions**: Keep your work aligned with the specific notation, terminology, and tools (e.g., specific R functions) taught in class to ensure you build relevant skills.
 
-- **Maintain Academic Integrity**: Submitting work completed by someone else, paying for solutions, or copying directly from external sources harms your own learning process and violates course ethics.
+- **Maintain Academic Integrity**: Submitting work completed by someone else, paying for solutions, or copying directly from external sources harms your own learning process and violates academic integrity.
 
 
 ## Course Climate
