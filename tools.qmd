@@ -24,6 +24,8 @@ We will use [an online forum]({{< var course.discussion >}}) where you can ask a
 
 We will use [Gradescope]({{< var course.gradescope >}}) for some of the assignments. You will get instructions on how to use Gradescope.
 
+We will use [Poll EV](https://www.huit.harvard.edu/poll-everywhere) for conducting in-class quizzes.
+
 
 We will use [Canvas]({{< var course.lms >}}) for keeping track of grades.
 
