@@ -1,1 +1,13 @@
-## TBD
+---
+title: Resources
+---
+
+|   |   |
+|---|---|
+|[Addressing People in Academia](https://www.datapedagogy.com/posts/2020-07-28-address-people-academia/address-people-academia)|This blog post talks about whom to call Dr., Prof., or Mx. etc..|
+|[Tips on Recommendation Letters for Students and Instructors](https://www.datapedagogy.com/posts/2024-04-22-recs-undergrad/recs-undergrad)|This blog post provides suggestions on asking for recommendation letters as part of graduate school applications|
+|[Recommendations for Undergraduate Students Interested in Statistics and Data Science](https://www.datapedagogy.com/posts/2024-04-22-recs-undergrad/recs-undergrad)| The blog post provides a list of opportunities to be involved with more statistics opportunities|
+|[Counseling and Mental Health Services](https://huhs.harvard.edu/get-care/counseling-and-mental-health/)|It is important to take care of yourselves physically and mentally throughout the semester (and in life) The CAMHS provides many services including a phone line with 24/7 support.|
+|[First Generation, Low Income](https://dso.college.harvard.edu/office-culture-community/about-harvard-foundation/supporting-student-growth/first-generation-low-income)|Website with events for first generation, low income students. As someone who was a first-generation and low income college student, I am also happy to talk to you about succeeding in college despite the challenges.|
+|[List of resources](https://dso.college.harvard.edu/additional-support)|A list of other resources on campus as outlined by Dean of Students Office|
+
