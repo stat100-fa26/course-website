@@ -9,7 +9,13 @@ It is my intent to design assessments that are a source of intellectual curiosit
 
 ### In-Class Quizzes
 
-In-Class quizzes provide an opportunity to practice as you are learning during the lectures. The questions will be asked sporadically throughout the lectures. You can discuss quiz questions with your neighbors in class, check notes, use internet etc. You will be graded for participation, not for correctness. You need to be attending the lecture and respond to all questions in order to receive the participation point. If you are not participating in lecture or have someone else participate for quizzes on your behalf, this will be considered academic misconduct. Note that during week zero we will have online quizzes for onboarding purposes which will be graded for correctness.
+In-Class quizzes provide an opportunity to practice as you are learning during the lectures.
+The questions will be asked sporadically throughout the lectures.
+You are encouraged to discuss quiz questions with your neighbors in class.
+You can check notes, use internet etc.
+You will be graded for participation, not for correctness of your answers.
+You need to be attending the lecture and respond to all questions in order to receive the full participation points. 
+If you are not participating in lecture or have someone else participate for quizzes on your behalf, this will be considered academic misconduct. Note that during week zero we will have online quizzes for onboarding purposes which will be graded for correctness.
 In other words, these online quizzes will get you ready for the first day of class.
 
 ### Section Activities
@@ -42,10 +48,10 @@ You will work individually on the exam.
 It will be a closed-book exam.
 You will not need a calculator and thus you will not be allowed to use one.
 
-### Project
+### Team Project
 
 You will complete a project with a team mostly in the second half of the semester.
-The project will consist of hands-on data analysis.
+The team project will consist of hands-on data analysis.
 You will apply the methods learned in this course to answer a question(s) that interests you.
 The project will have multiple components starting in the second half of the semester.
 Two of the many components of the project is the proposal and the presentation.
@@ -54,7 +60,7 @@ If we notice a big discrepancy in the amount of team members amount of work, the
 
 ## Grading
 
-The following weights will be adopted in calculating the total grade.
+The following weights will be adopted in calculating the final grade.
 
 <table class="table table-condensed table-striped text-left">
   <thead>
@@ -107,13 +113,14 @@ Each student has 48 hour late work submission allowance that they can use throug
 This means that a student can submit one homework 24 hours late, another one 12 hours late, and another one 12 hours late and still have their work graded with maximum points possible.
 In order for the late submission to be taken into account, please email the preceptor to use your late work submission allowance.
 
-It is recommended that you start working on the homework early and not leave it until the last minute to avoid any technological or personal issues. Starting early would also give you ample opportunity to attend office hours.
+It is recommended that you start working on the homework early and not leave it until the last minute to avoid any technological or personal issues.
+Starting early would also give you ample opportunity to attend office hours.
 
 ### Excused Absences
 
 You are expected to attend the lectures and the section you signed up for.
 Attendance is important, not only for your learning experience but also socializing with your classmates.
-Who would want to be elsewhere but be surrounded by their STAT 100 peers?. 
+Who would want to be elsewhere but be surrounded by their STAT 100 peers in their sections?
 If there is any physical, mental, personal, religious, cultural, and other reasons that prevent you from attending the lectures or the section, please email the course instructor. 
 When possible please do so in a timely manner.
 
@@ -121,7 +128,8 @@ When possible please do so in a timely manner.
 
 While we will try our best to make sure that your grade is correct, it is possible for us to make minor mistakes in grading unfortunately. Thus, we strongly encourage you to go over your assignments to check for the correctness of your grade. 
 You should immediately notify us if there are any errors. 
-For all assignments other than the final, you have one-week after receiving feedback and grade from us to ask for regrading to correct any errors. 
+For all assignments other than the final exam, you have one-week after receiving feedback and grade from us to ask for regrading to correct any errors. 
+For the final exam, you have 48 hours to request a regrade after receiving feedback.
 We will use Canvas Gradebook for keeping track of grades and you should check for its correctness.
 For assignments on Gradescope you can send regrade requests directly within Gradescope. 
 For others, you can email the preceptor. 
@@ -132,13 +140,13 @@ Make sure to include the assignment number, question number, and why you think t
 
 ### Office Hours
 
-The teaching team, including the instructor, preceptor, and the teaching team have several office hours that you can attend. You can attend office hours for several reasons for asking questions about the course content, assignments, statistics careers, or simply to say hi because we love seeing our students during office hours. 
+The teaching team, including the instructor, preceptor, and the course assistants have several office hours that you can attend. You can attend office hours for several reasons for asking questions about the course content, assignments, statistics careers, or simply to say hi because we love seeing our students during office hours. 
 
 You can find the schedule for office hours under the <a href="people.html">People </a> tab and on the Google calendar on the  <a href="index.html">Home</a> page.
 
 ### Online Discussion
 
-We will have an [online forum]({{< var course.discussion >}}). While communicating online, please note the following:
+We will have an [online forum]({{< var course.discussion >}}) where you can ask questions. While communicating online, please note the following:
 
 - Before posting a question, please make sure that the same question has not been posted before.
 
@@ -167,7 +175,7 @@ You can always make an anonymous post if you are feeling shy.
 ### Getting Help From Peers and Artificial Intelligence (AI) Tools {#sec-ai}
 
 Collaborative learning and AI tools can be incredible assets for mastering course material when used intentionally. Working with peers offers vital social benefits alongside academic support, a meaningful advantage as social isolation becomes a growing challenge.
-Engaging with AI tools can also save time later in the term, though navigating them effectively as a novice learner can be tricky.
+Engaging with AI tools can possibly save time later in the term, though navigating them effectively as a novice learner can be tricky.
 For this reason, avoiding AI during the early weeks of the semester is strongly recommended so you can build a solid foundation first.
 
 Because your midterm and final exams are in-person and closed-book, developing true personal mastery during weekly assignments is your best path to success.
