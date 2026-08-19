@@ -166,7 +166,12 @@ You can always make an anonymous post if you are feeling shy.
 
 ### Getting Help From Peers and Artificial Intelligence (AI) Tools {#sec-ai}
 
-Collaborative learning and AI tools can be incredible assets for mastering course material when used intentionally. Since your midterm and final exams are in-person and closed-book, building personal confidence with the material during weekly assignments is your best path to success. You are encouraged to collaborate with peers and consult AI tools for assignments, provided you use them as study partners rather than shortcuts.
+Collaborative learning and AI tools can be incredible assets for mastering course material when used intentionally. Working with peers offers vital social benefits alongside academic support, a meaningful advantage as social isolation becomes a growing challenge.
+Engaging with AI tools can also save time later in the term, though navigating them effectively as a novice learner can be tricky.
+For this reason, avoiding AI during the early weeks of the semester is strongly recommended so you can build a solid foundation first.
+
+Because your midterm and final exams are in-person and closed-book, developing true personal mastery during weekly assignments is your best path to success.
+While peer collaboration is encouraged and AI tool usage is not prohibited, both should strictly serve as study partners to deepen your understanding, never as shortcuts.
 
 - **Attempt First, Consult Second**: Try tackling problems independently before turning to peers or AI. Use outside help to clarify concepts, troubleshoot errors, or deepen your understanding—not to generate quick answers.
 
