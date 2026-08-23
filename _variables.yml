@@ -28,6 +28,7 @@ instructor:
   pronoun: "she/they"
   office-hours: "T 1:30 - 2:30 pm & R 4:00 - 5:00 pm in person and online"
   office: "Maxwell-Dworkin 241"
+  alt: A headshot of a woman with curly, short hair with green eyes and small almost-round glasses.
   
   
 preceptor: 
@@ -36,4 +37,109 @@ preceptor:
   pronoun: "she/her"
   office-hours: "M 10:30 - 11:30 am & T 7:00 - 9:00 pm in person"
   office: "Maxwell-Dworkin 231"
+  alt: A headshot of a woman with long straight hair and glasses.
+  
+senior_cas:
+  - name: "Siri Panetta"
+    image: "img/senior-ca-siri.jpeg"
+    audio: "audio/senior-ca-siri.mp3"
+    alt: "Headshot of Siri."
+    email: "siripanetta@college.harvard.edu"
+    pronoun: "she/her"
+    office-hours: "TBD"
+    office: "TBD"
+    
+  - name: "Yasmin Salerno"
+    image: "img/senior-ca-yasmin.jpg"
+    audio: "audio/senior-ca-yasmin.mp3"
+    alt: "Headshot of Yasmin."
+    email: "ysalerno@college.harvard.edu"
+    pronoun: "she/her"
+    office-hours: "TBD"
+    office: "TBD"
+
+  - name: "Oliver Song"
+    image: "img/senior-ca-oliver.JPG"
+    audio: "audio/senior-ca-oliver.mp3"
+    alt: "Headshot of Oliver."
+    email: "oliversong@college.harvard.edu"
+    pronoun: "he/him"
+    office-hours: "TBD"
+    office: "TBD"
+    
+cas:
+
+  - name: "Charlotte Chapman"
+    image: "img/ca-charlotte.jpeg"
+    audio: "audio/ca-charlotte.mp3"
+    alt: "Headshot of Charlotte."
+    email: "cchapman@college.harvard.edu"
+    pronoun: "she/her"
+    office-hours: "TBD"
+    office: "TBD"
+
+
+  - name: "Julia Dong"
+    image: "img/ca-julia.jpeg"
+    audio: "audio/ca-julia.mp3"
+    alt: "Headshot of Julia."
+    email: "juliadong@college.harvard.edu"
+    pronoun: "she/her"
+    office-hours: "TBD"
+    office: "TBD"
+
+  - name: "Annie Harrington"
+    image: "img/ca-annie.jpeg"
+    audio: "audio/ca-annie.mp3"
+    alt: "Headshot of Annie."
+    email: "aharrington@college.harvard.edu"
+    pronoun: "she/her"
+    office-hours: "TBD"
+    office: "TBD"
+    
+  - name: "Tino Karakousis"
+    image: "img/ca-tino.jpg"
+    audio: "audio/ca-tino.mp3"
+    alt: "Headshot of Tino."
+    email: "tinokarakousis@college.harvard.edu"
+    pronoun: "he/him"
+    office-hours: "TBD"
+    office: "TBD"
+    
+  - name: "Izabela Pacheco Silva"
+    image: "img/ca-izabela.jpeg"
+    audio: "audio/ca-izabela.mp3"
+    alt: "Headshot of Izabella."
+    email: "izabelapachecosilva@college.harvard.edu"
+    pronoun: "she/her"
+    office-hours: "TBD"
+    office: "TBD"
+
+  - name: "Johnny Perkins"
+    image: "img/ca-johnny.JPG"
+    audio: "audio/ca-johnny.mp3"
+    alt: "Headshot of Johnny."
+    email: "jperkins@college.harvard.edu"
+    pronoun: "he/him"
+    office-hours: "TBD"
+    office: "TBD"
+
+  - name: "Andrea Tchinda Machedjou"
+    image: "img/ca-andrea.JPG"
+    audio: "audio/ca-andrea.mp3"
+    alt: "Headshot of Andrea."
+    email: "andreatchindamachedjou@college.harvard.edu"
+    pronoun: "she/her"
+    office-hours: "TBD"
+    office: "TBD"
+
+
+  - name: "Amy Zhou"
+    image: "img/ca-amy.JPEG"
+    audio: "audio/ca-amy.mp3"
+    alt: "Headshot of Amy."
+    email: "axzhou@college.harvard.edu"
+    pronoun: "she/her"
+    office-hours: "TBD"
+    office: "TBD"
 

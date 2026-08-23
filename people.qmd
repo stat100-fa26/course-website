@@ -6,7 +6,7 @@
 
 ::: {.column width="30%"}
 <img src="img/instructor.jpeg" class="rounded-circle center mx-auto d-block"
-     alt="A headshot of a woman with curly, short hair with green eyes and small almost-round glasses."
+     alt="{{< var instructor.alt >}}"
      style="float: left; margin-right: 10px; width: 100%; padding-bottom:20px;" />
 :::
 
@@ -37,7 +37,7 @@
 
 ::: {.column width="30%"}
 <img src="img/preceptor.jpeg" class="rounded-circle center mx-auto d-block"
-     alt="A headshot of a woman with long straight hair and glasses."
+     alt="{{< var preceptor.alt >}}"
      style="float: left; margin-right: 10px; width: 100%; padding-bottom:20px;" />
 :::
 
@@ -67,13 +67,152 @@ Office Hours: <br> {{< var preceptor.office-hours >}}
 
 
 
+## Team of Course Assistants
 
+### Senior Course Assistants
 
+```{r}
+#| echo: false
+#| results: 'asis'
+#| warning: false
+library(yaml)
 
-## Course Assistants
+vars <- read_yaml("_variables.yml")
+cas <- vars$senior_cas
 
-TBD
+if (!is.null(cas) && length(cas) > 0) {
+  cat(':::: {.columns}\n\n')
+  
+  for (i in seq_along(cas)) {
+    ca <- cas[[i]]
+    
+    # Left or Right column (48% width)
+    cat('::: {.column width="48%"}\n')
+    cat(':::: {.columns}\n')
+    
+    # Image column (30%)
+    cat('::: {.column width="30%"}\n')
+    cat(sprintf('<img src="%s" class="rounded-circle center mx-auto d-block" alt="%s" style="float: left; margin-right: 10px; width: 100%%; padding-bottom:20px;" />\n', 
+                ca$image, ca$alt))
+    cat(':::\n\n')
+    
+    # Spacer column (5%)
+    cat('::: {.column width="5%"}\n:::\n\n')
+    
+    # Details column (65%)
+    cat('::: {.column width="65%"}\n')
+    
+    # Audio & Name
+    if (!is.null(ca$audio) && ca$audio != "") {
+      cat(sprintf('[{{< fa volume-high >}}](%s){aria-label="Play audio pronunciation of %s"} %s  \n', ca$audio, ca$name, ca$name))
+    } else {
+      cat(sprintf('**%s**  \n', ca$name))
+    }
+    
+    # Pronoun
+    if (!is.null(ca$pronoun)) cat(sprintf('%s  \n', ca$pronoun))
+    
+    # Email
+    if (!is.null(ca$email)) {
+      cat(sprintf('[%s](mailto:%s){aria-label="Email %s" style="word-break: break-all;"}  \n', ca$email, ca$email, ca$name))
+    }
+    
+    # Office Hours & Location
+    if (!is.null(ca$`office-hours`)) cat(sprintf('<br>Office Hours: <br> %s  \n', ca$`office-hours`))
+    if (!is.null(ca$office)) cat(sprintf('{{< fa building-columns title="Office Location" >}} %s\n', ca$office))
+    
+    cat(':::\n\n')
+    cat('::::\n') # End inner .columns
+    cat(':::\n\n') # End outer .column
+    
+    # Add a gap column between the 2 horizontal cards
+    if (i %% 2 == 1 && i < length(cas)) {
+      cat('::: {.column width="4%"}\n:::\n\n')
+    }
+    
+    # Close row and start a new row after every 2 CAs
+    if (i %% 2 == 0 && i < length(cas)) {
+      cat('::::\n\n:::: {.columns}\n\n')
+    }
+  }
+  
+  cat('::::\n') # End main .columns container
+} else {
+  cat('TBD\n')
+}
+```
+
+### Course Assistants
 
      
      
-   
+```{r}
+#| echo: false
+#| results: 'asis'
+#| warning: false
+library(yaml)
+
+vars <- read_yaml("_variables.yml")
+cas <- vars$cas
+
+if (!is.null(cas) && length(cas) > 0) {
+  cat(':::: {.columns}\n\n')
+  
+  for (i in seq_along(cas)) {
+    ca <- cas[[i]]
+    
+    # Left or Right column (48% width)
+    cat('::: {.column width="48%"}\n')
+    cat(':::: {.columns}\n')
+    
+    # Image column (30%)
+    cat('::: {.column width="30%"}\n')
+    cat(sprintf('<img src="%s" class="rounded-circle center mx-auto d-block" alt="%s" style="float: left; margin-right: 10px; width: 100%%; padding-bottom:20px;" />\n', 
+                ca$image, ca$alt))
+    cat(':::\n\n')
+    
+    # Spacer column (5%)
+    cat('::: {.column width="5%"}\n:::\n\n')
+    
+    # Details column (65%)
+    cat('::: {.column width="65%"}\n')
+    
+    # Audio & Name
+    if (!is.null(ca$audio) && ca$audio != "") {
+      cat(sprintf('[{{< fa volume-high >}}](%s){aria-label="Play audio pronunciation of %s"} %s  \n', ca$audio, ca$name, ca$name))
+    } else {
+      cat(sprintf('**%s**  \n', ca$name))
+    }
+    
+    # Pronoun
+    if (!is.null(ca$pronoun)) cat(sprintf('%s  \n', ca$pronoun))
+    
+    # Email
+    if (!is.null(ca$email)) {
+      cat(sprintf('[%s](mailto:%s){aria-label="Email %s" style="word-break: break-all;"}  \n', ca$email, ca$email, ca$name))
+    }
+    
+    # Office Hours & Location
+    if (!is.null(ca$`office-hours`)) cat(sprintf('<br>Office Hours: <br> %s  \n', ca$`office-hours`))
+    if (!is.null(ca$office)) cat(sprintf('{{< fa building-columns title="Office Location" >}} %s\n', ca$office))
+    
+    cat(':::\n\n')
+    cat('::::\n') # End inner .columns
+    cat(':::\n\n') # End outer .column
+    
+    # Add a gap column between the 2 horizontal cards
+    if (i %% 2 == 1 && i < length(cas)) {
+      cat('::: {.column width="4%"}\n:::\n\n')
+    }
+    
+    # Close row and start a new row after every 2 CAs
+    if (i %% 2 == 0 && i < length(cas)) {
+      cat('::::\n\n:::: {.columns}\n\n')
+    }
+  }
+  
+  cat('::::\n') # End main .columns container
+} else {
+  cat('TBD\n')
+}
+```
