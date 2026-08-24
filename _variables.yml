@@ -134,12 +134,4 @@ cas:
     office: "TBD"
 
 
-  - name: "Amy Zhou"
-    image: "img/ca-amy.JPEG"
-    audio: "audio/ca-amy.mp3"
-    alt: "Headshot of Amy."
-    email: "axzhou@college.harvard.edu"
-    pronoun: "she/her"
-    office-hours: "TBD"
-    office: "TBD"
 
