@@ -25,7 +25,7 @@ You will be able to work on these problems with your classmates under the guidan
 You will submit this work by the end of the section. 
 This work will be graded by completion and not correctness. 
 While mistakes are considered part of the learning process for these activities, problems that have been solved by the course assistants are expected to be shown with a correct solution.
-
+Section activities need to be submitted by the end of each section.
 
 ### Homework Assignments
 
@@ -133,7 +133,11 @@ For the final exam, you have 48 hours to request a regrade after receiving feedb
 We will use Canvas Gradebook for keeping track of grades and you should check for its correctness.
 For assignments on Gradescope you can send regrade requests directly within Gradescope. 
 For others, you can email the preceptor. 
-Make sure to include the assignment number, question number, and why you think there is an error in grading.
+Make sure to include the assignment number, question number, and why you think there is an error in grading in a detailed manner.
+A regrade request should never be used for the argument of "I need a certain grade", "I think I deserve more simply because". You should only request a regrade if there is an error in our grading with a clear evidence. 
+Note that a regrade request may result with 1) a higher grade, 2) the same grade or 3) a lower grade.
+
+
 
 
 ## Getting Help
