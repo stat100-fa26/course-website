@@ -46,7 +46,7 @@ senior_cas:
     alt: "Headshot of Siri."
     email: "siripanetta@college.harvard.edu"
     pronoun: "she/her"
-    office-hours: "TBD"
+    office-hours: "T 7:00 - 9:00 pm, F 3:00 - 4:00 pm in person & by appointment R 12:00 - 1:00 pm online"
     office: "TBD"
     
   - name: "Yasmin Salerno"
@@ -55,7 +55,7 @@ senior_cas:
     alt: "Headshot of Yasmin."
     email: "ysalerno@college.harvard.edu"
     pronoun: "she/her"
-    office-hours: "TBD"
+    office-hours: "F 3:00 - 5:00 in person & by appointment R 3:00 - 4:00 pm online"
     office: "TBD"
 
   - name: "Oliver Song"
@@ -64,8 +64,17 @@ senior_cas:
     alt: "Headshot of Oliver."
     email: "oliversong@college.harvard.edu"
     pronoun: "he/him"
-    office-hours: "TBD"
+    office-hours: "T 7:00 - 9:00 in person"
     office: "TBD"
+    
+  - name: "Virgil Guo"
+    image: "TBD"
+    audio: "TBD"
+    alt: "Headshot of Virgil."
+    email: "virgilguo@college.harvard.edu"
+    pronoun: "he/him"
+    office-hours: "F 8:30 - 10:00 am in person & by appointment W 9:00 - 10:00 am online"
+    office: "TBD"    
     
 cas:
 
@@ -75,7 +84,7 @@ cas:
     alt: "Headshot of Charlotte."
     email: "cchapman@college.harvard.edu"
     pronoun: "she/her"
-    office-hours: "TBD"
+    office-hours: "R 7:00 - 9:00 in person"
     office: "TBD"
 
 
@@ -85,7 +94,7 @@ cas:
     alt: "Headshot of Julia."
     email: "juliadong@college.harvard.edu"
     pronoun: "she/her"
-    office-hours: "TBD"
+    office-hours: "T 9:00 - 10:00 in person"
     office: "TBD"
 
   - name: "Annie Harrington"
@@ -103,7 +112,7 @@ cas:
     alt: "Headshot of Tino."
     email: "tinokarakousis@college.harvard.edu"
     pronoun: "he/him"
-    office-hours: "TBD"
+    office-hours: "F 8:00 - 10:00 pm in person"
     office: "TBD"
     
   - name: "Izabela Pacheco Silva"
@@ -112,7 +121,7 @@ cas:
     alt: "Headshot of Izabella."
     email: "izabelapachecosilva@college.harvard.edu"
     pronoun: "she/her"
-    office-hours: "TBD"
+    office-hours: "F 3:00 - 4:00 pm in person & by appointment W 12:00 - 1:00 pm online"
     office: "TBD"
 
   - name: "Johnny Perkins"
@@ -121,7 +130,7 @@ cas:
     alt: "Headshot of Johnny."
     email: "jperkins@college.harvard.edu"
     pronoun: "he/him"
-    office-hours: "TBD"
+    office-hours: "Sa 10:30 am - 12:30 pm in person & by appointment F 3:00 - 4:00 pm online"
     office: "TBD"
 
   - name: "Andrea Tchinda Machedjou"
@@ -132,6 +141,17 @@ cas:
     pronoun: "she/her"
     office-hours: "TBD"
     office: "TBD"
+    
+  - name: "Brooke Liao"
+    image: "TBD"
+    audio: "TBD"
+    alt: "Headshot of Brooke."
+    email: "bliao@college.harvard.edu"
+    pronoun: "she/her"
+    office-hours: "F 12:00 - 1:00 pm in person & by appointment T 10:00 - 11:00 am online"
+    office: "TBD"
+    
+
 
 
 
