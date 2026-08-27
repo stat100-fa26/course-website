@@ -30,7 +30,7 @@ get_icon_name <- function(item, col_type) {
   )
 }
 
-# 2. Helper to build HTML links according to URL routing rules
+# 2. Helper to build HTML links with updated Quiz routing logic
 format_links <- function(items_str, column_type) {
   if (is.na(items_str) || str_trim(items_str) == "") return("")
   
@@ -42,18 +42,16 @@ format_links <- function(items_str, column_type) {
     icon_name <- get_icon_name(item, column_type)
     
     url <- case_when(
-      grepl("^http", item)             ~ item,
-      # Quizzes go to Gradescope
-      grepl("quiz", item)              ~ paste0(gradescope, "/assignments/", item),
-      # Lecture files go to slides repo
-      column_type == "lecture"        ~ paste0(slides_repo, item),
-      # Readings, section, homework, exams, project go to HTML files in specific-content/<type>/
-      column_type == "prepare"        ~ paste0("specific-content/readings/", item),
-      column_type == "section"        ~ paste0("specific-content/sections/", item),
-      column_type == "homework"       ~ paste0("specific-content/homework/", item),
-      column_type == "exams"          ~ paste0("specific-content/exams/", item),
-      column_type == "project"        ~ paste0("specific-content/project/", item),
-      TRUE                            ~ paste0("specific-content/", column_type, "/", item)
+      grepl("^http", item)                          ~ item,
+      grepl("quiz", item) & grepl("\\.html$", item) ~ paste0("specific-content/quizzes/", item),
+      grepl("quiz", item)                           ~ paste0(gradescope, "/assignments/", item),
+      column_type == "lecture"                      ~ paste0(slides_repo, item),
+      column_type == "prepare"                      ~ paste0("specific-content/readings/", item),
+      column_type == "section"                      ~ paste0("specific-content/sections/", item),
+      column_type == "homework"                     ~ paste0("specific-content/homework/", item),
+      column_type == "exams"                        ~ paste0("specific-content/exams/", item),
+      column_type == "project"                      ~ paste0("specific-content/project/", item),
+      TRUE                                          ~ paste0("specific-content/", column_type, "/", item)
     )
     
     paste0(
@@ -66,7 +64,7 @@ format_links <- function(items_str, column_type) {
   str_flatten(links[links != ""], collapse = '<span style="margin-right: 6px;"></span>')
 }
 
-# 3. Legend matching your exact function icon mappings
+# 3. Legend matching your exact icon mappings
 legend_df <- tibble(
   `Icon` = c(
     as.character(fa("book", fill = crimson)),
@@ -85,12 +83,12 @@ legend_html <- legend_df |>
   mutate(item = paste0('<span style="margin-right: 14px; white-space: nowrap;">', Icon, ' ', Meaning, '</span>')) |> 
   pull(item) |> 
   str_flatten(collapse = "") |> 
-  (\(x) paste0('<div style="font-size: 0.85em; margin-bottom: 12px; padding: 8px; background-color: #F8FAFC; border-radius: 4px;">', x, '</div>'))()
+  (\(x) paste0('<div style="font-size: 0.85em; margin-bottom: 12px; padding: 8px; background-color: #F8FAFC; border-radius: 4px;"><strong>Legend:</strong> ', x, '</div>'))()
 
-# 4. Read & process schedule data
-schedule_data <- read_csv(here::here("specific-content/schedule-template.csv"), show_col_types = FALSE) |> 
+# 4. Read & process schedule data with robust date handling
+schedule_data <- read_csv(here::here("specific-content/schedule.csv"), show_col_types = FALSE) |> 
   mutate(
-    date = as.character(date), # Replaced ymd() with simple character conversion
+    date = format(as.Date(parse_date_time(date, orders = c("ymd", "mdy", "dmy", "B d Y"))), "%Y-%m-%d"),
     across(c(prepare, lecture, section, homework, exams, project), 
            ~ map2_chr(.x, cur_column(), format_links))
   )
