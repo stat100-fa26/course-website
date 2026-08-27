@@ -1,1 +1,138 @@
-## TBD
+---
+toc: false
+title: Course Schedule
+---
+
+```{r}
+#| message: false
+#| echo: false
+library(tidyverse)
+library(gt)
+library(fontawesome)
+
+# Base URLs & Colors
+slides_repo <- "https://stats6-sp26.github.io/slides/"
+gradescope  <- "https://www.gradescope.com/courses/1287917"
+crimson     <- "#A51C30"
+
+# 1. Map column context + file extension/keyword to FontAwesome icons
+get_icon_name <- function(item, col_type) {
+  case_when(
+    grepl("quiz", item)                   ~ "circle-question", 
+    col_type == "prepare"                 ~ "book",            
+    grepl("\\.R$", item)                  ~ "r-project",      
+    col_type == "lecture"                 ~ "display",        
+    col_type == "section"                 ~ "repeat",          
+    col_type == "homework"                ~ "list-check",  
+    col_type == "exams"                   ~ "pen-to-square",         
+    col_type == "project"                 ~ "people-group",          
+    TRUE                                  ~ "link"
+  )
+}
+
+# 2. Helper to build HTML links with updated Quiz routing logic
+format_links <- function(items_str, column_type) {
+  if (is.na(items_str) || str_trim(items_str) == "") return("")
+  
+  items <- str_split(items_str, "\\s*,\\s*")[[1]]
+  
+  links <- map_chr(items, function(item) {
+    if (is.na(item) || item == "") return("")
+    
+    icon_name <- get_icon_name(item, column_type)
+    
+    url <- case_when(
+      grepl("^http", item)                          ~ item,
+      grepl("quiz", item) & grepl("\\.html$", item) ~ paste0("specific-content/quizzes/", item),
+      grepl("quiz", item)                           ~ paste0(gradescope, "/assignments/", item),
+      column_type == "lecture"                      ~ paste0(slides_repo, item),
+      column_type == "prepare"                      ~ paste0("specific-content/readings/", item),
+      column_type == "section"                      ~ paste0("specific-content/sections/", item),
+      column_type == "homework"                     ~ paste0("specific-content/homework/", item),
+      column_type == "exams"                        ~ paste0("specific-content/exams/", item),
+      column_type == "project"                      ~ paste0("specific-content/project/", item),
+      TRUE                                          ~ paste0("specific-content/", column_type, "/", item)
+    )
+    
+    paste0(
+      '<a href="', url, '" style="color: ', crimson, '; text-decoration: none;" aria-label="', item, '">',
+      fa(icon_name, fill = crimson), 
+      '</a>'
+    )
+  })
+  
+  str_flatten(links[links != ""], collapse = '<span style="margin-right: 6px;"></span>')
+}
+
+# 3. Legend matching your exact icon mappings
+legend_df <- tibble(
+  `Icon` = c(
+    as.character(fa("book", fill = crimson)),
+    as.character(fa("circle-question", fill = crimson)),
+    as.character(fa("display", fill = crimson)),
+    as.character(fa("r-project", fill = crimson)),
+    as.character(fa("repeat", fill = crimson)),
+    as.character(fa("list-check", fill = crimson)),
+    as.character(fa("pen-to-square", fill = crimson)),
+    as.character(fa("people-group", fill = crimson))
+  ),
+  `Meaning` = c("Reading", "Quiz", "Slides", "R Code", "Section", "Homework", "Exams", "Project")
+)
+
+legend_html <- legend_df |> 
+  mutate(item = paste0('<span style="margin-right: 14px; white-space: nowrap;">', Icon, ' ', Meaning, '</span>')) |> 
+  pull(item) |> 
+  str_flatten(collapse = "") |> 
+  (\(x) paste0('<div style="font-size: 0.85em; margin-bottom: 12px; padding: 8px; background-color: #F8FAFC; border-radius: 4px;"><strong>Legend:</strong> ', x, '</div>'))()
+
+# 4. Read & process schedule data with robust date handling
+schedule_data <- read_csv(here::here("specific-content/schedule.csv"), show_col_types = FALSE) |> 
+  mutate(
+    date = format(as.Date(parse_date_time(date, orders = c("ymd", "mdy", "dmy", "B d Y"))), "%Y-%m-%d"),
+    across(c(prepare, lecture, section, homework, exams, project), 
+           ~ map2_chr(.x, cur_column(), format_links))
+  )
+
+# 5. Identify end-of-week rows for borders
+end_of_week_rows <- schedule_data |> 
+  mutate(row_id = row_number()) |> 
+  group_by(week) |> 
+  filter(row_id == max(row_id)) |> 
+  pull(row_id)
+
+# 6. Render GT Table
+schedule_data |> 
+  gt() |> 
+  tab_header(title = html(legend_html)) |> 
+  cols_label(
+    week     = "Week",
+    day      = "Day",
+    date     = "Date",
+    topic    = "Topic",
+    prepare  = "Prepare",
+    lecture  = "Lecture",
+    section  = "Section",
+    homework = "Homework",
+    exams    = "Exams",
+    project  = "Project"
+  ) |> 
+  fmt_markdown(columns = c(prepare, lecture, section, homework, exams, project)) |> 
+  tab_style(
+    style = cell_borders(sides = "bottom", color = "#94A3B8", weight = px(1.5)),
+    locations = cells_body(rows = end_of_week_rows)
+  ) |> 
+  tab_options(
+    table.border.top.style = "none",
+    table.border.bottom.style = "none",
+    column_labels.border.bottom.color = crimson,
+    column_labels.border.bottom.width = px(2),
+    table_body.hlines.color = "#F1F5F9",
+    table_body.vlines.color = "#E2E8F0",
+    table_body.vlines.style = "solid",
+    column_labels.vlines.color = "#CBD5E1",
+    column_labels.vlines.style = "solid"
+  ) |> 
+  cols_align(align = "center", columns = c(week, day, date, prepare, lecture, section, homework, exams, project)) |> 
+  cols_align(align = "left", columns = topic)
+```
+

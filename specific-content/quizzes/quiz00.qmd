@@ -1,0 +1,11 @@
+---
+title: "Get Ready for STAT 100"
+---
+
+Finish the following assignments before coming to class.
+
+- [ ] [Let Us Know of Your GitHub Username](https://www.gradescope.com/courses/1346867/assignments/8380891/) Read the instructions in the provided link.
+
+- [ ] [Introduce Yourself to the Teaching Team](https://www.gradescope.com/courses/1346867/assignments/8380956) The responses to this “quiz” will not be available to your classmates. The quiz is not timed.
+
+- [ ] [Syllabus Quiz](https://www.gradescope.com/courses/1346867/assignments/8381213) Read this course website in detail before attempting this quiz. Especially read the policies section. The quiz is not timed.
