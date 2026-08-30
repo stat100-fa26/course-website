@@ -40,6 +40,16 @@ preceptor:
   alt: A headshot of a woman with long straight hair and glasses.
   
 senior_cas:
+
+  - name: "Virgil Guo"
+    image: "TBD"
+    audio: "TBD"
+    alt: "Headshot of Virgil."
+    email: "virgilguo@college.harvard.edu"
+    pronoun: "he/him"
+    office-hours: "F 8:30 - 10:00 am in person & by appointment W 9:00 - 10:00 am online"
+    office: "TBD"  
+
   - name: "Siri Panetta"
     image: "img/senior-ca-siri.jpeg"
     audio: "audio/senior-ca-siri.mp3"
@@ -67,14 +77,7 @@ senior_cas:
     office-hours: "T 7:00 - 9:00 in person"
     office: "TBD"
     
-  - name: "Virgil Guo"
-    image: "TBD"
-    audio: "TBD"
-    alt: "Headshot of Virgil."
-    email: "virgilguo@college.harvard.edu"
-    pronoun: "he/him"
-    office-hours: "F 8:30 - 10:00 am in person & by appointment W 9:00 - 10:00 am online"
-    office: "TBD"    
+  
     
 cas:
 
@@ -115,6 +118,15 @@ cas:
     office-hours: "F 8:00 - 10:00 pm in person"
     office: "TBD"
     
+  - name: "Brooke Liao"
+    image: "TBD"
+    audio: "TBD"
+    alt: "Headshot of Brooke."
+    email: "bliao@college.harvard.edu"
+    pronoun: "she/her"
+    office-hours: "F 12:00 - 1:00 pm in person & by appointment T 10:00 - 11:00 am online"
+    office: "TBD"    
+    
   - name: "Izabela Pacheco Silva"
     image: "img/ca-izabela.jpeg"
     audio: "audio/ca-izabela.mp3"
@@ -142,14 +154,7 @@ cas:
     office-hours: "TBD"
     office: "TBD"
     
-  - name: "Brooke Liao"
-    image: "TBD"
-    audio: "TBD"
-    alt: "Headshot of Brooke."
-    email: "bliao@college.harvard.edu"
-    pronoun: "she/her"
-    office-hours: "F 12:00 - 1:00 pm in person & by appointment T 10:00 - 11:00 am online"
-    office: "TBD"
+
     
 
 
