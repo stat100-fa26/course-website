@@ -16,3 +16,8 @@ The office hour times and locations can be found on the calendar on the [Home pa
 - [ ] [Setup git](https://harvard.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cbaeb938-a37a-484c-8d19-b4b20157a5fa)
 - [ ] [Section Activity](https://harvard.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b9b0eab9-9841-463a-abef-b4b20157a5c2)
 
+---
+
+Submit your activity by making a commit and a push on GitHub as shown in the last video.
+Submit by 1:30 pm on September 4th.
+
