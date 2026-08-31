@@ -1,0 +1,6 @@
+---
+title: "Reading for Lecture 01b"
+format: html
+---
+
+- [ ] [Hello Data Science - Chapter 1](https://hellodata.science/chapters/chapter-01)

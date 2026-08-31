@@ -137,9 +137,6 @@ Make sure to include the assignment number, question number, and why you think t
 A regrade request should never be used for the argument of "I need a certain grade", "I think I deserve more simply because". You should only request a regrade if there is an error in our grading with a clear evidence. 
 Note that a regrade request may result with 1) a higher grade, 2) the same grade or 3) a lower grade.
 
-
-
-
 ## Getting Help
 
 ### Office Hours

@@ -1,0 +1,5 @@
+﻿week,day,date,topic,prepare,lecture,section,homework,exams,project
+1,Mon,3/30/26,Course Intro & R Basics,"read01.html,quiz01.html","01-intro.html,01-script.R",,,,
+1,Wed,4/1/26,Data Visualization,"read02.html,quiz_1287917",02-ggplot.html,sec01.html,hw01.html,,
+1,Fri,4/3/26,Data Wrangling,read03.html,03-dplyr.html,,,,proj-proposal.html
+2,Mon,4/6/26,Midterm 1,,04-review.html,,,exam1.html,
