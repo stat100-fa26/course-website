@@ -1,0 +1,14 @@
+---
+title: "Homework 1"
+format: html
+---
+
+This week's homework will give you an opportunity to practice
+
+
+- R basics
+- finding your way around RStudio
+- getting used to committing often
+- utilizing Tidyverse style guide early on
+
+You can access the homework in your Week 1 repo on the [course GitHub organization](https://github.com/stat100-fa26).

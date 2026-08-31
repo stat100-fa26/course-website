@@ -144,8 +144,6 @@ if (!is.null(cas) && length(cas) > 0) {
 
 ### Course Assistants
 
-     
-     
 ```{r}
 #| echo: false
 #| results: 'asis'

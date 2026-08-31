@@ -11,8 +11,8 @@ library(gt)
 library(fontawesome)
 
 # Base URLs & Colors
-slides_repo <- "https://stats6-sp26.github.io/slides/"
-gradescope  <- "https://www.gradescope.com/courses/1287917"
+slides_repo <- "https://stat100-fa26.github.io/slides/"
+gradescope  <- "https://www.gradescope.com/courses/1346867"
 crimson     <- "#A51C30"
 
 # 1. Map column context + file extension/keyword to FontAwesome icons
@@ -22,7 +22,7 @@ get_icon_name <- function(item, col_type) {
     col_type == "prepare"                 ~ "book",            
     grepl("\\.R$", item)                  ~ "r-project",      
     col_type == "lecture"                 ~ "display",        
-    col_type == "section"                 ~ "repeat",          
+    col_type == "section"                 ~ "repeat",         
     col_type == "homework"                ~ "list-check",  
     col_type == "exams"                   ~ "pen-to-square",         
     col_type == "project"                 ~ "people-group",          
@@ -88,21 +88,26 @@ legend_html <- legend_df |>
 # 4. Read & process schedule data with robust date handling
 schedule_data <- read_csv(here::here("specific-content/schedule.csv"), show_col_types = FALSE) |> 
   mutate(
-    date = format(as.Date(parse_date_time(date, orders = c("ymd", "mdy", "dmy", "B d Y"))), "%Y-%m-%d"),
+    parsed_d = parse_date_time(date, orders = c("ymd", "mdy", "dmy", "B d Y")),
+    date = if_else(is.na(parsed_d), NA_character_, format(as.Date(parsed_d), "%Y-%m-%d")),
     across(c(prepare, lecture, section, homework, exams, project), 
            ~ map2_chr(.x, cur_column(), format_links))
-  )
+  ) |> 
+  select(-parsed_d)
 
-# 5. Identify end-of-week rows for borders
+# 5. Identify end-of-week rows for borders (fills week down to group correctly)
 end_of_week_rows <- schedule_data |> 
+  fill(week, .direction = "down") |> 
   mutate(row_id = row_number()) |> 
+  filter(!is.na(week)) |> 
   group_by(week) |> 
   filter(row_id == max(row_id)) |> 
   pull(row_id)
 
-# 6. Render GT Table
+# 6. Render GT Table with missing value suppression
 schedule_data |> 
   gt() |> 
+  sub_missing(missing_text = "") |> 
   tab_header(title = html(legend_html)) |> 
   cols_label(
     week     = "Week",
@@ -135,4 +140,3 @@ schedule_data |>
   cols_align(align = "center", columns = c(week, day, date, prepare, lecture, section, homework, exams, project)) |> 
   cols_align(align = "left", columns = topic)
 ```
-
