@@ -1,4 +1,8 @@
-
+---
+toc: false
+title: STAT 100 Teaching Team
+freeze: false
+---
 
 ## Instructor
 
