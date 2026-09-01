@@ -1,6 +1,7 @@
 ---
 toc: false
 title: Course Schedule
+freeze: false
 ---
 
 ```{r}
