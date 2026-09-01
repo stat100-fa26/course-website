@@ -42,8 +42,8 @@ preceptor:
 senior_cas:
 
   - name: "Virgil Guo"
-    image: "TBD"
-    audio: "TBD"
+    image: "img/senior-ca-virgil.jpeg"
+    audio: "senior-ca-virgil.mp3"
     alt: "Headshot of Virgil."
     email: "virgilguo@college.harvard.edu"
     pronoun: "he/him"
