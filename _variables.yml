@@ -43,7 +43,7 @@ senior_cas:
 
   - name: "Virgil Guo"
     image: "img/senior-ca-virgil.jpeg"
-    audio: "senior-ca-virgil.mp3"
+    audio: "audio/senior-ca-virgil.mp3"
     alt: "Headshot of Virgil."
     email: "virgilguo@college.harvard.edu"
     pronoun: "he/him"
@@ -151,7 +151,7 @@ cas:
     alt: "Headshot of Andrea."
     email: "andreatchindamachedjou@college.harvard.edu"
     pronoun: "she/her"
-    office-hours: "TBD"
+    office-hours: "Su 2:00 - 4:00 pm, F 2:00 - 4:00 pm in person"
     office: "TBD"
     
 
