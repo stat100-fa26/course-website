@@ -1,0 +1,23 @@
+---
+title: "Week 1 Section Activity"
+format: html
+---
+
+During Week 1, we do not have in-person sections. 
+Instead please complete the following tasks by watching the associated videos. 
+Please watch the videos **in the order that they are listed** on this page.
+First go to Canvas course page, then click on Panopto before clicking on video links.
+Feel free to come to office hours if you run into any issues or simply to say hi. 
+The office hour times and locations can be found on the calendar on the [Home page](https://stat-100.com).
+
+- [ ] Install R on [Mac](https://harvard.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a172bcd5-29d6-4c46-833e-b4b201555709) or [Windows](https://harvard.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f4a77ac2-874b-4023-a38b-b4b200f439d5)
+- [ ] Install RStudio on [Mac](https://harvard.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8a3826b2-4f0a-4585-9ac0-b4b201555767) or on [Windows](https://harvard.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=506ba5ec-e491-415d-8396-b4b200f43934)
+- [ ] Install git on [Mac](https://harvard.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=49430466-fe9d-46f3-ac3f-b4b2015556db) or on [Windows](https://harvard.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4f9c457e-2d56-48ae-811e-b4b200f43975)
+- [ ] [Setup git](https://harvard.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cbaeb938-a37a-484c-8d19-b4b20157a5fa)
+- [ ] [Section Activity](https://harvard.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b9b0eab9-9841-463a-abef-b4b20157a5c2)
+
+---
+
+Submit your activity by making a commit and a push on GitHub as shown in the last video.
+Submit by 1:30 pm on September 4th.
+
