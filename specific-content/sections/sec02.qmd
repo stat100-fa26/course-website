@@ -1,0 +1,13 @@
+---
+title: "Week 2 Section Activity"
+format: html
+---
+
+Starting week 2 and moving forward, we will have in-person sections. 
+Please go to your assigned section, at the assigned time, at the assigned location. 
+
+During the section you will get to practice:
+
+- getting to know data frames
+- identifying variable types 
+- summarizing variables
