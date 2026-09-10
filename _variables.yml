@@ -48,7 +48,7 @@ senior_cas:
     email: "virgilguo@college.harvard.edu"
     pronoun: "he/him"
     office-hours: "F 8:30 - 9:30 am in person & by appointment W 9:00 - 10:00 am online"
-    office: "TBD"  
+    office: "Maxwell Dworkin L1 (First Floor Lounge)"  
 
   - name: "Siri Panetta"
     image: "img/senior-ca-siri.jpeg"
@@ -57,7 +57,7 @@ senior_cas:
     email: "siripanetta@college.harvard.edu"
     pronoun: "she/her"
     office-hours: "T 7:00 - 9:00 pm, F 3:00 - 4:00 pm in person & by appointment R 12:00 - 1:00 pm online"
-    office: "TBD"
+    office: "Maxwell Dworkin L1 (First Floor Lounge)"
     
   - name: "Yasmin Salerno"
     image: "img/senior-ca-yasmin.jpg"
@@ -66,7 +66,7 @@ senior_cas:
     email: "ysalerno@college.harvard.edu"
     pronoun: "she/her"
     office-hours: "F 3:00 - 5:00 pm in person & by appointment T 3:00 - 4:00 pm, Fri 11:00 am - 12:00 pm online"
-    office: "TBD"
+    office: "Maxwell Dworkin L1 (First Floor Lounge)"
 
   - name: "Oliver Song"
     image: "img/senior-ca-oliver.JPG"
@@ -75,7 +75,7 @@ senior_cas:
     email: "oliversong@college.harvard.edu"
     pronoun: "he/him"
     office-hours: "T 7:00 - 9:00 pm in person"
-    office: "TBD"
+    office: "Maxwell Dworkin L1 (First Floor Lounge)"
     
   
     
@@ -88,7 +88,7 @@ cas:
     email: "cchapman@college.harvard.edu"
     pronoun: "she/her"
     office-hours: "R 7:00 - 9:00 pm in person"
-    office: "TBD"
+    office: "Currier House Dining Hall"
 
 
   - name: "Julia Dong"
@@ -98,7 +98,7 @@ cas:
     email: "juliadong@college.harvard.edu"
     pronoun: "she/her"
     office-hours: "R 9:00 - 10:00 am in person"
-    office: "TBD"
+    office: "Adams House Dining Hall (Side Room)"
 
   - name: "Annie Harrington"
     image: "img/ca-annie.jpeg"
@@ -107,7 +107,7 @@ cas:
     email: "aharrington@college.harvard.edu"
     pronoun: "she/her"
     office-hours: "Su 8:00 - 9:00 pm in person & by appointment W 3:00 - 4:00 pm online"
-    office: "TBD"
+    office: "Kirkland House Dining Hall"
     
   - name: "Tino Karakousis"
     image: "img/ca-tino.jpg"
@@ -116,7 +116,7 @@ cas:
     email: "tinokarakousis@college.harvard.edu"
     pronoun: "he/him"
     office-hours: "F 7:00 - 9:00 pm in person"
-    office: "TBD"
+    office: "Quincy House Dining Hall"
     
   - name: "Brooke Liao"
     image: "img/ca-brooke.jpg"
@@ -124,8 +124,8 @@ cas:
     alt: "Headshot of Brooke."
     email: "bliao@college.harvard.edu"
     pronoun: "she/her"
-    office-hours: "F 12:00 - 1:00 pm in person & by appointment T 10:00 - 11:00 am online"
-    office: "TBD"    
+    office-hours: "M 12:00 - 1:00 pm in person & by appointment T 10:00 - 11:00 am online"
+    office: "Maxwell Dworkin L1 (First Floor Lounge)"    
     
   - name: "Izabela Pacheco Silva"
     image: "img/ca-izabela.jpeg"
@@ -134,7 +134,7 @@ cas:
     email: "izabelapachecosilva@college.harvard.edu"
     pronoun: "she/her"
     office-hours: "F 3:00 - 4:00 pm in person & by appointment W 12:00 - 1:00 pm online"
-    office: "TBD"
+    office: "Maxwell Dworkin L1 (First Floor Lounge)"
 
   - name: "Johnny Perkins"
     image: "img/ca-johnny.JPG"
@@ -143,7 +143,7 @@ cas:
     email: "jperkins@college.harvard.edu"
     pronoun: "he/him"
     office-hours: "Sa 10:30 am - 12:30 pm in person & by appointment F 3:00 - 4:00 pm online"
-    office: "TBD"
+    office: "Maxwell Dworkin L1 (First Floor Lounge)"
 
   - name: "Andrea Tchinda Machedjou"
     image: "img/ca-andrea.JPG"
@@ -152,7 +152,7 @@ cas:
     email: "andreatchindamachedjou@college.harvard.edu"
     pronoun: "she/her"
     office-hours: "Su 2:00 - 4:00 pm, F 2:00 - 4:00 pm in person"
-    office: "TBD"
+    office: "Quincy House Dining Hall"
     
 
     
