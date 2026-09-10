@@ -125,12 +125,9 @@ cas:
     email: "bliao@college.harvard.edu"
     pronoun: "she/her"
     office-hours: "M 12:00 - 1:00 pm in person & by appointment T 10:00 - 11:00 am online"
-<<<<<<< HEAD
     office: "Maxwell Dworkin L1 (First Floor Lounge)"    
-=======
     office: "TBD"    
->>>>>>> d57d3d2154e9165a16d5204c438cf0f318695655
-    
+
   - name: "Izabela Pacheco Silva"
     image: "img/ca-izabela.jpeg"
     audio: "audio/ca-izabela.mp3"
