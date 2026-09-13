@@ -1,0 +1,13 @@
+---
+title: "Homework 3"
+format: html
+---
+
+This week's homework will give you an opportunity to practice
+
+- interpret visualizations
+- create visualizations using ggplot
+- write alt text
+
+You can access the homework in your Week 3 repo on the [course GitHub organization](https://github.com/stat100-fa26).
+Homework is due at 1:25 pm on September 21st.
