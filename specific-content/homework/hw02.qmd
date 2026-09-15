@@ -1,0 +1,13 @@
+---
+title: "Homework 2"
+format: html
+---
+
+This week's homework will give you an opportunity to practice
+
+- getting to know data frames
+- identifying variable types 
+- summarizing variables
+
+You can access the homework in your Week 2 repo on the [course GitHub organization](https://github.com/stat100-fa26).
+Homework is due at 1:25 pm on September 14th.

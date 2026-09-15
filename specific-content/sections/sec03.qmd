@@ -1,0 +1,11 @@
+---
+title: "Week 3 Section Activity"
+format: html
+---
+
+Please go to your assigned section, at the assigned time, at the assigned location. 
+
+During the section you will get to practice:
+
+- interpreting visualizations
+- making visualizations using ggplot
