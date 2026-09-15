@@ -162,6 +162,12 @@ We will have an [online forum]({{< var course.discussion >}}) where you can ask 
 
 - Answer each other's questions. 
 
+### ARC Peer Tutoring
+
+The [Academic Resource Center (ARC)](https://academicresourcecenter.harvard.edu/) aims to create conditions for optimizing student learning by providing a range of resources, including academic coaching, peer tutoring, and group programming. Peer tutoring is a friendly, interactive learning opportunity with another student who has already been there. Meet with a peer tutor to get questions answered, clear up areas of confusion, work through practice problems, or just talk through course material. You can also book a small group tutoring session with classmates, teammates, or friends for a collaborative opportunity to reinforce course concepts. Peer tutors have experience with the course content and have been trained to facilitate learning in inclusive, active
+sessions. To get started, go to the [ARC Scheduler](https://arcscheduler.fas.harvard.edu) to see the availability of
+peer tutors for your courses. Harvard College students can receive peer tutoring services free of charge up to a maximum of 6 total hours per week. 
+
 ## E-mail
 
 Please use email for only course logistics that are only about you. 
