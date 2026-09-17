@@ -131,8 +131,7 @@ For all assignments other than the final exam, you have one-week after receiving
 For the final exam, you have 48 hours to request a regrade after receiving feedback.
 We will use Canvas Gradebook for keeping track of grades and you should check for its correctness.
 For assignments on Gradescope you can send regrade requests directly within Gradescope. 
-For others, you can email the preceptor. 
-Make sure to include the assignment number, question number, and why you think there is an error in grading in a detailed manner.
+For others, you can fill out [this form](https://forms.gle/ba1WtXD6D4FZe41z7).
 A regrade request should never be used for the argument of "I need a certain grade", "I think I deserve more simply because". You should only request a regrade if there is an error in our grading with a clear evidence. 
 Note that a regrade request may result with 1) a higher grade, 2) the same grade or 3) a lower grade.
 
