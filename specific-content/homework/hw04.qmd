@@ -1,0 +1,15 @@
+---
+title: "Homework 4"
+format: html
+---
+
+This week's homework will give you an opportunity to practice
+
+- working with the pipe operator
+- subsetting data frames
+- changing variable names
+- making changes to variables
+- aggregating data
+
+You can access the homework in your Week 4 repo on the [course GitHub organization](https://github.com/stat100-fa26).
+Homework is due at 1:25 pm on September 28th.
