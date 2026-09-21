@@ -1,9 +1,3 @@
----
-toc: false
-title: Course Schedule
-freeze: false
----
-
 ```{r}
 #| message: false
 #| echo: false
@@ -20,6 +14,7 @@ crimson     <- "#A51C30"
 get_icon_name <- function(item, col_type) {
   case_when(
     grepl("quiz", item)                   ~ "circle-question", 
+    grepl("handout", item)                ~ "pen",             
     col_type == "prepare"                 ~ "book",            
     grepl("\\.R$", item)                  ~ "r-project",      
     col_type == "lecture"                 ~ "display",        
@@ -71,13 +66,14 @@ legend_df <- tibble(
     as.character(fa("book", fill = crimson)),
     as.character(fa("circle-question", fill = crimson)),
     as.character(fa("display", fill = crimson)),
+    as.character(fa("pen", fill = crimson)),
     as.character(fa("r-project", fill = crimson)),
     as.character(fa("repeat", fill = crimson)),
     as.character(fa("list-check", fill = crimson)),
     as.character(fa("pen-to-square", fill = crimson)),
     as.character(fa("people-group", fill = crimson))
   ),
-  `Meaning` = c("Reading", "Quiz", "Slides", "R Code", "Section", "Homework", "Exams", "Project")
+  `Meaning` = c("Reading", "Quiz", "Slides", "Handout", "R Code", "Section", "Homework", "Exams", "Project")
 )
 
 legend_html <- legend_df |> 
