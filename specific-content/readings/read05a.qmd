@@ -1,0 +1,6 @@
+---
+title: "Reading for Lecture 5a"
+format: html
+---
+
+- [ ] [Hello Data Science - Chapter 6](https://hellodata.science/chapters/chapter-06)
