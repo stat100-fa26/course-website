@@ -1,0 +1,108 @@
+---
+title: "Team Project Proposal"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## TL;DR
+
+-   Your team will analyze a real data set of your choosing and write a **short research paper** about it.
+-   The first big step is the **proposal**, which you build in three milestones:
+    1.  **Data** (Fri, Oct 16, 5:00 pm): choose your data and set up a documented `data/` folder with a README.
+    2.  **Introduction** (Fri, Oct 23, 5:00 pm): write the introduction of your paper in Quarto, ending with your research questions.
+    3.  **Exploratory data analysis** (Wed, Nov 4, 5:00 pm): explore your data with visualizations, tables, and summary statistics, and write it up in your paper.
+-   You are **not** expected to fully answer your research questions yet. Modeling and inference come later in the term.
+-   Everything is submitted by pushing to your team's GitHub repo, `project-teamXX` (for example, `project-team07`). Whatever is on GitHub at the deadline is what gets graded.
+-   For inspiration, read a few winning papers from the USCLAP undergraduate project competition (links [below](#learning-from-example-papers)).
+
+## Overview
+
+This term, your team will carry out a data analysis project from start to finish and write it up as a short research paper. You will choose a data set that interests you, ask questions about it, explore it, and, later in the term, draw conclusions from it.
+
+The goal is to **learn data science by doing it**: finding and documenting data, cleaning it, visualizing and summarizing it, and communicating what you find in clear writing.
+
+The project has two halves. In the first half, which these instructions cover, you write a **proposal**: you get your data ready, write the introduction of your paper, and explore your data. In the second half, after we cover modeling and inference in class, you add your analysis and conclusions and turn everything into a finished paper. Instructions for the second half will be released later.
+
+Each milestone builds on the one before it, and you will get feedback on each one. Every milestone ends with a checklist; use it before you submit.
+
+### Your repository
+
+Each team has a GitHub repository named `project-teamXX`, where `XX` is your team number (for example, `project-team07`). All of your project work lives in this repository, and you submit each milestone by committing and pushing to it. **The version of your repository on GitHub at the deadline is the version that will be graded.** Commit and push early and often.
+
+### Timeline
+
+| Milestone                    | Due                               |
+|------------------------------|-----------------------------------|
+| [1. Data](milestone-1-data.html) | **Friday, October 16 at 5:00 pm** |
+| [2. Introduction](milestone-2-introduction.html) | **Friday, October 23 at 5:00 pm** |
+| [3. Exploratory data analysis](milestone-3-eda.html) | **Wednesday, November 4 at 5:00 pm** |
+
+## Learning from example papers {#learning-from-example-papers}
+
+The paper you will write is modeled on the short papers submitted to the **Undergraduate Class Project Competition (USCLAP)**, a national competition for projects completed by undergraduates in statistics and data science courses. USCLAP papers are three pages of text, figures, and tables, plus a title page and references.
+
+At the end of the term, I may nominate up to three of the strongest projects from our class to submit to USCLAP. That is a nice opportunity, but it is not the point of the project. You are writing this paper to learn data science, and that is what you will be graded on. You do not need to think about the competition itself right now.
+
+What is useful to you now is seeing what good short papers look like. Early in the term, each member of your team should:
+
+-   **Skim two or three past winning papers** on topics that interest you. Notice how they are organized, how the introduction moves from a broad topic to a specific question, how figures and tables are labeled and discussed, and how much can be said in only three pages. Start with the [list of all previous winners](https://www.causeweb.org/usproc/projects/winners), or jump to a recent semester: [Spring 2026](https://www.causeweb.org/usproc/usclap/2026/spring/winners), [Fall 2025](https://www.causeweb.org/usproc/usclap/2025/fall/winners), [Spring 2025](https://www.causeweb.org/usproc/usclap/2025/spring/winners), [Fall 2024](https://www.causeweb.org/usproc/usclap/2024/fall/winners).
+-   **Read the [USCLAP report template](https://www.causeweb.org/usproc/report-template-USCLAP).** It describes a typical structure for a short paper and lists the questions judges ask about each section. Those questions make a great self-check for your own writing.
+
+Many winning papers use methods we have not covered yet, such as regression and hypothesis tests. For now, focus on their structure and writing rather than their methods.
+
+## Milestone 1: Data
+
+**Due Friday, October 16 at 5:00 pm**
+
+Your team chooses the real data set you will work with for the rest of the term, sets up your repository with a `data/` folder (raw data, processed data, and the cleaning code that connects them), and writes a `data/README.md` that documents the data so well that someone who has never seen it could understand it.
+
+**Full instructions and checklist:** [Milestone 1: Data](milestone-1-data.html)
+
+## Milestone 2: Introduction
+
+**Due Friday, October 23 at 5:00 pm**
+
+You start your paper in `paper/paper.qmd` by writing its introduction: about half to three-quarters of a page that moves from the big picture to your specific topic, draws on at least three cited sources (including your data), and ends with clearly stated research questions.
+
+**Full instructions and checklist:** [Milestone 2: Introduction](milestone-2-introduction.html)
+
+## Milestone 3: Exploratory data analysis
+
+**Due Wednesday, November 4 at 5:00 pm**
+
+You explore your data with visualizations, tables, and summary statistics and write it up in your paper, which by now contains the complete proposal: title, revised introduction, data section, exploratory data analysis, next steps, and references. You are not expected to fully answer your research questions yet; describe what you see in your sample without claiming significance or causation.
+
+**Full instructions and checklist:** [Milestone 3: Exploratory data analysis](milestone-3-eda.html)
+
+## Working as a team
+
+-   **Everyone contributes to everything.** Divide the work, but make sure every team member understands the whole project, including the code. Anyone on the team should be able to explain everything in the paper.
+-   **Everyone commits.** Each team member should commit and push their own work. The commit history is one way I see who contributed. If contributions are clearly uneven, I may give team members different grades.
+-   **Communicate to avoid merge conflicts.** Agree on who is editing which file or section at a given time, and always pull before you start working.
+-   **Ask for help early.** If your team is stuck on the data, the code, or teamwork, come to office hours sooner rather than later.
+
+
+## Using AI tools
+
+The goal of this project is for you to learn data science by doing it. AI tools can support that learning, but they cannot replace it.
+
+Code. You may use AI tools to help with your code. Start by trying it yourself with the functions and approaches we have learned in class. When you need more, you can ask an AI tool for help, and direct it to write tidyverse code in the style we use in class. Your team is responsible for all code you submit. If it does not run, or it runs but does not do what you intended, that is your responsibility, not the tool's. Every team member should be able to explain what the code in your repository does.
+
+Writing. You must write the first draft of everything yourselves: your paper, your data README, and your research questions. You may not use AI tools to draft, outline, or generate any of that text. Once you have a complete draft, you may use AI tools to check grammar and spelling or to polish your wording. The ideas, structure, and content must stay your own.
+
+References. Do your literature search yourselves, using Google Scholar and library databases such as HOLLIS, not AI tools. Read every source you cite. Every reference in your paper must be real and correct: the authors, title, year, and link must match an actual publication. A made-up or incorrect reference is a serious problem, whatever caused it.
+
+Data. You may use AI tools such as Data Navigator to search for data sets, but you must trace every data set to its original source yourself and confirm that it is real.
+
+A note on USCLAP. If your paper is nominated for USCLAP, the judges will read your AI use statement. We do not know how they weigh AI use when judging, but a paper that is clearly your own work is likely to be in a stronger position. Keeping your AI use to a minimum is good for your learning, and it may help your paper too.
+
+When in doubt, ask me before you use a tool.
+
+
+## AI use statement
+
+At the end of your paper, after the references, include a short section titled AI Use Statement. In a few sentences, describe which AI tools your team used and what you used them for. If you did not use any AI tools, say so. USCLAP also requires this statement.
+
+For example: "We wrote our cleaning and plotting code using functions from class, then used ChatGPT to help write tidyverse code for reshaping our data from wide to long format, and checked that the output matched what we intended. We used Data Navigator to search for data sets and found the original data on the Census Bureau website. We wrote all of the text in this paper ourselves and used Grammarly to check grammar in the final draft. We found all references through Google Scholar and HOLLIS."

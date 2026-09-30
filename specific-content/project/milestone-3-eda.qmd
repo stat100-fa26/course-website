@@ -1,0 +1,76 @@
+---
+title: "Milestone 3: Exploratory data analysis"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+[← Back to the project proposal overview](proposal.html)
+
+**Due Wednesday, November 4 at 5:00 pm**
+
+With your data ready and your questions set, it is time to explore. By this point in the term we will have covered exploratory data analysis (EDA). In this milestone, your team completes all of the EDA for your project and writes it up in your paper. When you are done, your paper will contain the complete proposal: introduction, data, and exploration.
+
+## What we are (and are not) asking for
+
+You have not yet learned modeling or statistical inference, so **you are not expected to fully answer your research questions yet**, and you should not claim that you have.
+
+What you should do is get to know your data really well and take a first, careful look at your research questions. For each question, ask: *What does this sample look like? What patterns, differences, or relationships do we see? What surprises us?* Answer with visualizations, tables, and summary statistics, and describe what you see in words.
+
+Later in the term, you will learn how to fit models and how to judge whether the patterns in your sample are likely to hold more generally. You will add that work to your paper then. The EDA you do now is its foundation: good models come from people who understand their data.
+
+Here is the difference in practice:
+
+| Appropriate now | Save for later in the term |
+|------------------------------------|------------------------------------|
+| "In this sample, adults who slept fewer than six hours reported a median of 5 poor mental health days, compared to 2 days for those who slept seven to eight hours (Figure 2)." | "Sleep significantly affects mental health." |
+| "The relationship between income and life expectancy appears positive and roughly linear, with a few outlying counties (Figure 3)." | "Income causes higher life expectancy." |
+| "We plan to investigate whether this difference remains once age is taken into account." | "After controlling for age, the difference is statistically significant." |
+
+Avoid words like "significant," "proves," and "causes" for now. Describe what you observe, and be honest about what you cannot yet say.
+
+## What your paper should include at this point
+
+By this deadline, `paper/paper.qmd` should render to a document with these sections:
+
+1.  **Title.** An informative title that tells the reader what the paper is about (not "Team Project").
+
+2.  **Introduction.** Your introduction from Milestone 2, revised based on feedback and on what you learned while exploring. If your research questions changed, update them here.
+
+3.  **Data.** A description of your data for a reader of the paper. You can adapt much of it from your data README, but write it as paragraphs, not a list. Explain where the data comes from, how and when it was collected, and what one observation represents. Describe the variables you use with meaningful names ("hours of sleep," not `SLEPTIM1`). Explain your cleaning: which observations you removed and why, how you handled missing or strange values, and any new variables you created. Finish with the size of the data you analyze. A reader should be able to recreate your analysis data set from this section.
+
+4.  **Exploratory data analysis.** The heart of this milestone. Start by describing your key variables one at a time: what the distribution of your outcome looks like, and the same for your other important variables, with appropriate summary statistics (means and standard deviations, medians and IQRs for skewed variables, counts and proportions for categorical ones). A summary table of your main variables often works well here. Then explore each research question with the visualizations, tables, and summary statistics that shed light on it, looking at relationships between variables and comparisons between groups. Along the way, point out anything unusual, such as outliers, skewness, missing data, or surprises, and explain what, if anything, you did about it.
+
+5.  **Next steps.** A short paragraph on what you still want to learn about your research questions. You do not need to name specific methods yet; describe it in your own terms, for example "We want to find out whether the difference between groups is large enough that it is unlikely to be due to chance," or "We want to see whether the relationship holds after accounting for age."
+
+6.  **References.** Generated automatically by Quarto from `references.bib`.
+
+## Figures, tables, and writing
+
+These expectations apply now and for the rest of the project:
+
+-   **Every figure and table is discussed in the text.** Tell the reader what to notice. If it is not discussed, it does not belong in the paper.
+-   **Figures** have readable axis labels with units (not raw variable names), an informative caption, and a number you refer to in the text ("Figure 1 shows..."). Quarto can number and cross-reference figures for you; we will see how in class.
+-   **Tables** are formatted neatly, with meaningful column names and a caption. Do not paste raw R output, such as the result of `summary()` or a printed tibble.
+-   **Code does not appear in the rendered paper.** Your code lives in the `.qmd` file, but set your chunks so only the results show. The reader should see a paper, not a homework assignment.
+-   **Describe what you did, not the functions you used:** "we removed observations with missing sleep duration," not "we used `filter()`."
+-   **Choose quality over quantity.** You will explore much more than you include. Keep only the figures and tables that help tell the story of your data. There is no strict page limit yet, but the final paper will be about three pages, so practice writing concisely.
+-   **Keep it reproducible.** Your paper should render from start to finish on a fresh copy of the repository, reading data from `data/processed/`.
+
+## Checklist for Milestone 3
+
+-   [ ] `paper/paper.qmd` renders without errors
+-   [ ] Informative title
+-   [ ] Revised introduction with clear research questions
+-   [ ] Data section written in paragraphs, including data cleaning
+-   [ ] Distributions and summary statistics of key variables
+-   [ ] Visualizations, tables, and summary statistics for each research question
+-   [ ] Every figure and table labeled, numbered, and discussed in the text
+-   [ ] No code or raw R output in the rendered paper
+-   [ ] Next steps paragraph
+-   [ ] References rendered from `references.bib`
+-   [ ] `data/README.md` and cleaning code updated to match what you did
+-   [ ] Everything committed and pushed to GitHub by the deadline
+
+[← Back to the project proposal overview](proposal.html)

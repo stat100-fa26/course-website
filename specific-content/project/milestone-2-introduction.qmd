@@ -1,0 +1,52 @@
+---
+title: "Milestone 2: Introduction"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+[← Back to the project proposal overview](proposal.html)
+
+**Due Friday, October 23 at 5:00 pm**
+
+Now that you know your data, it is time to start your paper. In this milestone, you write its introduction: the section that tells the reader what your paper is about, why it matters, and which questions you will investigate.
+
+Your paper lives in `paper/paper.qmd`. **We will cover how to write papers in Quarto in class**, including how to add citations using a `references.bib` file, so you will have what you need before this is due.
+
+## What the introduction should do
+
+A strong introduction moves from the general to the specific:
+
+1.  **It opens with the big picture.** Start with the broader topic and why a reader should care. A well-chosen fact or statistic, with a citation, makes a good opening.
+2.  **It draws on what others have found.** Briefly describe what is already known about your topic from reputable sources, such as government reports, research articles, and reliable news outlets, and cite them.
+3.  **It narrows down** from the broad topic to the specific question your data can speak to.
+4.  **It ends with your research questions,** stated clearly and specifically in the last few sentences.
+
+Write for a reader who is smart but knows nothing about your subject. Define any specialized terms.
+
+## Writing good research questions
+
+-   Good research questions are **specific and answerable with your data.** "What affects happiness?" is too broad. "How is the number of hours adults sleep related to the number of days they report poor mental health?" is specific and names the variables involved.
+-   Good research questions are **not yes/no questions.** Ask "how" or "to what extent" rather than "does."
+-   Aim for **one main question and two or three related sub-questions.**
+
+Your questions may change a bit as you explore the data. That is expected, and you will revise the introduction in Milestone 3.
+
+## Requirements
+
+-   Written in `paper/paper.qmd`, which renders without errors.
+-   About **half a page to three-quarters of a page** of text. The final paper is only about three pages long, so every sentence should earn its place.
+-   At least **three references**, one of which is your data source, cited with Quarto's citation tools and stored in `paper/references.bib`.
+-   Written in full paragraphs, in your own words. No bullet points in the paper itself.
+
+## Checklist for Milestone 2
+
+-   [ ] `paper/paper.qmd` renders without errors
+-   [ ] Introduction moves from the big picture to your specific questions
+-   [ ] Research questions clearly stated at the end
+-   [ ] At least three references, including your data source, in `references.bib`
+-   [ ] About half to three-quarters of a page, written in paragraphs
+-   [ ] Everything committed and pushed to GitHub by the deadline
+
+[← Back to the project proposal overview](proposal.html)

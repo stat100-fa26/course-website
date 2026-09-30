@@ -1,0 +1,107 @@
+---
+title: "Milestone 1: Data"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+[← Back to the project proposal overview](proposal.html)
+
+**Due Friday, October 16 at 5:00 pm**
+
+Every project starts with data. In this milestone, your team chooses the data set you will work with for the rest of the term, sets up your repository, and documents the data so well that someone who has never seen it (e.g., course assistants) could understand it.
+
+## Choosing a data set
+
+Choose data your team finds interesting enough to spend several weeks with. A good project data set:
+
+-   **Is real data** collected for a real purpose, for example by a government agency, a research study, or an organization. You may combine more than one source.
+-   **Is new to our class.** Do not use data sets we have used in class or homework, or that come with R packages we use in the course.
+-   **Is big enough to be interesting.** Aim for at least a few hundred observations (rows) and several variables (columns), with a mix of numerical and categorical variables.
+-   **Supports interesting questions.** Before you commit, make sure you can think of two or three questions you would want to answer with it. Later in the term you will fit models, so it helps to have one variable you want to explain or predict (an outcome) and several variables that might be related to it.
+-   **Is well documented.** You should be able to find out who collected the data, how, when, and what each variable means.
+-   **Is allowed to be used and shared.** Check the license or terms of use. Do not use data containing personal identifying information, and talk to me before collecting any data from people yourselves.
+
+Whatever website you find your data on, tell apart the **host** (the site you download the data from) and the **source** (the person or organization that actually collected it). Many sites host data that someone else collected, and some host data that was made up or changed along the way. Before you commit to a data set, trace it back to its original source and make sure the data is real, the source is credible, and you can find out how the data was collected.
+
+These guides can help you search:
+
+-   [Places to find data](https://hellodata-science.github.io/places-to-find-data/), a list of data sources for projects like this one.
+-   Harvard Library's [Data Resources guide](https://guides.library.harvard.edu/data/home).
+-   Harvard Library's [Navigating the Dataset Landscape](https://guides.library.harvard.edu/c.php?g=1435201&p=10663854), which is especially useful as you start looking across repositories and subject areas in the sciences.
+-   [Data Navigator](https://chatgpt.com/g/g-68c05702a4248191b89abc6bd7dd00e6-data-navigator), a custom GPT for finding data. It runs in Harvard's ChatGPT Edu environment; if you have not activated access yet, start at the [HUIT ChatGPT Edu page](https://www.huit.harvard.edu/chatgpt) (HarvardKey login required). As with any AI tool, verify that a data set it suggests actually exists and check its original source yourself.
+
+## Setting up your repository
+
+Organize your repository as shown below. You will add to it over the term, but for this milestone you need the `data/` folder and everything in it.
+
+```
+project-teamXX/
+├── .gitignore                 # files Git should ignore
+├── README.md                  # short description of your project and team
+├── project-teamXX.Rproj
+├── data/
+│   ├── README.md              # documentation for your data (details below)
+│   ├── raw/                   # data exactly as downloaded; never edit these files
+│   │   └── ...
+│   ├── processed/             # cleaned data created by your code
+│   │   └── ...
+│   └── clean-data.qmd         # code that turns raw/ into processed/ (or clean-data.R)
+└── paper/
+    ├── paper.qmd              # your paper (starting in Milestone 2)
+    └── references.bib         # your references (starting in Milestone 2)
+```
+
+This structure depends on a few habits:
+
+-   **Never edit raw data by hand.** Files in `data/raw/` stay exactly as you downloaded them. All cleaning (filtering, selecting variables, renaming, recoding, handling missing values, joining) happens in code in `clean-data.qmd`, which reads from `data/raw/` and writes to `data/processed/`. That way anyone, including you in December, can see and repeat every step.
+-   **Use the `here` package for file paths**, for example `here::here("data", "processed", "my-data.csv")`, so your code runs on anyone's computer.
+-   **Make sure your code runs from start to finish** on a fresh copy of the repository without errors.
+-   **Keep clutter out of the repository.** The `.gitignore` file tells Git which files not to track, such as `.Rhistory`, `.RData`, `.Rproj.user/`, and `.DS_Store`.
+
+At this stage, your cleaning code may be very short: read the raw file, keep the rows and columns you need, and save the result. It will grow as you explore the data.
+
+## Writing the data README
+
+A README is a plain-text file, written in Markdown, that tells a reader what is in a folder and how to use it. **We will cover README files in class before this milestone is due**, so do not worry if you have never written one.
+
+Your `data/README.md` should let someone who has never seen your data understand it without asking you any questions. It must include:
+
+1.  **Source and citation:** who created the data, where you got it (with a link), the date you downloaded it, and a full citation.
+2.  **How the data was collected:** who or what was measured, when, where, how, and why. Was it a survey, an experiment, administrative records, or scraped from a website? If it is a sample, how was it drawn?
+3.  **Observational unit:** what one row represents (a person, a county, a song, a game, a day).
+4.  **Files:** every file in `data/raw/` and `data/processed/`, with a one-line description and its number of rows and columns.
+5.  **Codebook:** a table describing every variable you plan to use, with
+    -   the variable name as it appears in the data,
+    -   a plain-language description,
+    -   its type (numerical or categorical),
+    -   units for numerical variables, or possible values for categorical ones,
+    -   how missing values are coded (some surveys use codes like 77, 99, or -1 for "don't know" or "refused").
+6.  **Processing steps:** a short summary of what your cleaning code does to get from `raw/` to `processed/`. Keep this up to date as your cleaning changes.
+7.  **License or terms of use**, if the source lists one.
+
+Also replace the top-level `README.md` with a few sentences about your project.
+
+For more guidance on documenting data, see Cornell Data Services' [Writing READMEs for Research Data](https://data.research.cornell.edu/data-management/sharing/readme/), which includes a template, and Harvard Library's [Manage and Share Your Data](https://library.harvard.edu/how-to/manage-and-share-your-data) for broader advice on research data management.
+
+## Getting help
+
+Harvard Library's data services team is happy to help you find and document your data:
+
+-   **Research Data Consultation:** [request a consultation](https://library.harvard.edu/services-tools/research-data-consultations-0) at any time for one-on-one help.
+-   **Office hours with the Data Services Librarian for the Sciences:** Ehsan Moghadam holds in-person office hours on Wednesdays from 9 to 10 am in Cabot Science Library, Room L205 (second floor).
+
+You are also always welcome in any of the office hours of the STAT 100 teaching team.
+
+## Checklist for Milestone 1
+
+-   [ ] Data set chosen and agreed on by the whole team
+-   [ ] Raw data in `data/raw/`
+-   [ ] Cleaning code in `data/` that creates `data/processed/` and runs without errors
+-   [ ] Complete `data/README.md`
+-   [ ] Updated top-level `README.md`
+-   [ ] `.gitignore` in place
+-   [ ] Everything committed and pushed to GitHub by the deadline
+
+[← Back to the project proposal overview](proposal.html)
