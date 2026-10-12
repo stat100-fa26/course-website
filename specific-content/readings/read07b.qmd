@@ -1,0 +1,8 @@
+---
+title: "Reading for Lecture 7b"
+format: html
+---
+
+- [ ] [Introduction to Modern Statistics - Chapter 2](https://openintro-ims.netlify.app/data-design)
+
+

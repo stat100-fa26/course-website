@@ -1,0 +1,13 @@
+---
+title: "Homework 7"
+format: html
+---
+
+This week's homework will give you an opportunity to practice
+
+- sampling methods
+- variable types in study design
+- A/B testing data analysis
+
+You can access the homework in your Week 7 repo on the [course GitHub organization](https://github.com/stat100-fa26).
+Homework is due at 1:25 pm on October 19th.
