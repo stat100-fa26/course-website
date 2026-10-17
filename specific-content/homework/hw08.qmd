@@ -1,0 +1,15 @@
+---
+title: "Homework 8"
+format: html
+---
+
+This week's homework will give you an opportunity to practice to
+
+- use rules of probability
+- use terminology related to probability
+- write conditional probability using notation
+- calculate probability using normal distribution
+- distinguish probability and likelihood
+
+You can access the homework in your Week 7 repo on the [course GitHub organization](https://github.com/stat100-fa26).
+Homework is due at 1:25 pm on October 26th.

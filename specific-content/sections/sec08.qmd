@@ -1,0 +1,14 @@
+---
+title: "Week 8 Section Activity"
+format: html
+---
+
+Please go to your assigned section, at the assigned time, at the assigned location. 
+
+During the section you will get to practice to:
+
+- use rules of probability
+- use terminology related to probability
+- write conditional probability using notation
+- calculate probability using normal distribution
+- distinguish probability and likelihood

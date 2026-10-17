@@ -1,0 +1,12 @@
+---
+title: "Reading for Lecture 8b"
+format: html
+---
+
+- [ ] [OpenIntro Statistics 4th edition - Section 4.1 Normal Distribution](https://leanpub.com/os) You can download the book for free. This is different than the OpenIntro book we used last week. Note that the notation we use in class and the notation used in the book may be different. Make sure to pay attention to the definitions of notation and always use notation we use in our lecture.
+
+
+
+
+
+
