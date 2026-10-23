@@ -11,5 +11,5 @@ This week's homework will give you an opportunity to practice to
 - calculate probability using normal distribution
 - distinguish probability and likelihood
 
-You can access the homework in your Week 7 repo on the [course GitHub organization](https://github.com/stat100-fa26).
+You can access the homework in your Week 8 repo on the [course GitHub organization](https://github.com/stat100-fa26).
 Homework is due at 1:25 pm on October 26th.

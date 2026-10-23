@@ -1,0 +1,14 @@
+---
+title: "Week 9 Section Activity"
+format: html
+---
+
+Please go to your assigned section, at the assigned time, at the assigned location. 
+
+During the section you will get to practice to:
+
+- conduct hypothesis testing from a frequentist perspective
+- interpret confidence intervals
+- distinguish probability and likelihood
+- conduct hypothesis testing from a Bayesian perspective
+- interpret credible intervals

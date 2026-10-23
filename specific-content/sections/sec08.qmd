@@ -11,4 +11,3 @@ During the section you will get to practice to:
 - use terminology related to probability
 - write conditional probability using notation
 - calculate probability using normal distribution
-- distinguish probability and likelihood

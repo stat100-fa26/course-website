@@ -1,0 +1,15 @@
+---
+title: "Homework 8"
+format: html
+---
+
+This week's homework will give you an opportunity to practice to
+
+- conduct hypothesis testing from a frequentist perspective
+- interpret confidence intervals
+- distinguish probability and likelihood
+- conduct hypothesis testing from a Bayesian perspective
+- interpret credible intervals
+
+You can access the homework in your Week 9 repo on the [course GitHub organization](https://github.com/stat100-fa26).
+Homework is due at 1:25 pm on November 2nd.
