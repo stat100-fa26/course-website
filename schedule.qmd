@@ -41,6 +41,7 @@ format_links <- function(items_str, column_type) {
       grepl("^http", item)                          ~ item,
       grepl("quiz", item) & grepl("\\.html$", item) ~ paste0("specific-content/quizzes/", item),
       grepl("quiz", item)                           ~ paste0(gradescope, "/assignments/", item),
+      grepl("\\.R$", item)                          ~ paste0("specific-content/code/", item),
       column_type == "lecture"                      ~ paste0(slides_repo, item),
       column_type == "prepare"                      ~ paste0("specific-content/readings/", item),
       column_type == "section"                      ~ paste0("specific-content/sections/", item),
@@ -50,8 +51,14 @@ format_links <- function(items_str, column_type) {
       TRUE                                          ~ paste0("specific-content/", column_type, "/", item)
     )
     
+    # Force download for R scripts (instead of opening in the browser)
+    is_r_file     <- grepl("\\.R$", item)
+    download_attr <- if (is_r_file) paste0(' download="', basename(item), '"') else ""
+    label         <- if (is_r_file) paste("Download", basename(item)) else item
+    
     paste0(
-      '<a href="', url, '" style="color: ', crimson, '; text-decoration: none;" aria-label="', item, '">',
+      '<a href="', url, '"', download_attr,
+      ' style="color: ', crimson, '; text-decoration: none;" aria-label="', label, '">',
       fa(icon_name, fill = crimson), 
       '</a>'
     )
