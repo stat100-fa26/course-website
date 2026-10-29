@@ -1,5 +1,5 @@
 ---
-title: "Homework 8"
+title: "Homework 9"
 format: html
 ---
 
@@ -12,4 +12,5 @@ This week's homework will give you an opportunity to practice to
 - interpret credible intervals
 
 You can access the homework in your Week 9 repo on the [course GitHub organization](https://github.com/stat100-fa26).
-Homework is due at 1:25 pm on November 2nd.
+Homework was due at 1:25 pm on November 2nd and has been postponed to 1:25 pm on November 9th.
+
