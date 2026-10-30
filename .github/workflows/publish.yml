@@ -41,7 +41,9 @@ jobs:
       # 3. Set up Quarto
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-
+        with:
+          tinytex: true
+          
       # 4. Render Quarto
       - name: Render Quarto
         run: quarto render
