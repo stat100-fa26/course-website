@@ -1,0 +1,146 @@
+/*-- scss:defaults --*/
+
+// ==========================================
+// 1. Google Font Imports for Accessibility
+// ==========================================
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,400;0,600;1,400&display=swap');
+
+// Font Variables
+$font-family-sans-serif: 'Atkinson Hyperlegible', Arial, sans-serif !default;
+$font-family-monospace: 'Source Code Pro', monospace !default;
+
+// Color Palette (WCAG AA & AAA Compliant)
+$harvard-crimson: #A51C30;
+$harvard-crimson-dark: #70101F;
+$harvard-crimson-accessible: #B33517;
+
+$body-bg: #F9F9FB !default;           // Soft off-white to reduce ocular fatigue
+$body-color: #1E1E1E !default;        // High-contrast charcoal (WCAG AAA)
+$text-muted: #595959 !default;
+
+$bg-whitesmoke: #F5F5F5 !default;
+$border-color: #E2E8F0 !default;
+
+/*-- scss:rules --*/
+
+// ==========================================
+// 2. Global Base & Typography
+// ==========================================
+body {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: $font-family-sans-serif;
+  color: $body-color;
+  background-color: $body-bg;
+}
+
+.jumbotron {
+  background: $bg-whitesmoke;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.center {
+  text-align: center;
+}
+
+// ==========================================
+// 3. Links & Interactive Elements
+// ==========================================
+a {
+  color: $harvard-crimson;
+  text-decoration: underline;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: $harvard-crimson-dark;
+  }
+
+  &:focus {
+    outline: 3px solid #005FCC;
+    outline-offset: 2px;
+  }
+}
+
+// Content Links (Email, Zoom, High-Contrast Overrides)
+#quarto-content {
+  a:not(.nav-link) {
+    color: $harvard-crimson-accessible !important;
+    text-decoration: underline;
+    font-weight: 500;
+
+    &:hover {
+      color: $harvard-crimson-dark !important;
+      text-decoration: none;
+    }
+
+    // FontAwesome Icon Matching
+    .fa,
+    .fas,
+    .fa-solid {
+      color: inherit !important;
+      opacity: 1 !important;
+    }
+  }
+}
+
+// ==========================================
+// 4. Navigation & Sidebar TOC
+// ==========================================
+// Navbar States
+.navbar-light .navbar-nav {
+  .nav-link {
+    color: $body-color !important;
+    opacity: 1 !important;
+
+    &.active,
+    &.show > .nav-link,
+    &:focus,
+    &:hover {
+      color: $harvard-crimson !important;
+      background-color: transparent !important;
+      font-weight: 700 !important;
+      opacity: 1 !important;
+    }
+
+    &.active {
+      border-bottom: 3px solid $harvard-crimson !important;
+    }
+  }
+}
+
+// Sidebar Table of Contents (TOC)
+.sidebar nav[role="doc-toc"] ul > li > a {
+  color: #444444 !important;
+
+  &:hover {
+    color: $harvard-crimson-accessible !important;
+    text-decoration: underline !important;
+  }
+
+  &.active {
+    color: $harvard-crimson-accessible !important;
+    background-color: $bg-whitesmoke;
+    border-left: 3px solid $harvard-crimson-accessible !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
+  }
+}
+
+// ==========================================
+// 5. Accessible Blockquotes
+// ==========================================
+blockquote, 
+.blockquote {
+  border-left: 5px solid $harvard-crimson !important;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  background-color: #FCFCFC;
+  color: $body-color !important;
+  border-radius: 0 8px 8px 0;
+
+  p {
+    color: $body-color !important;
+    opacity: 1 !important;
+  }
+}
