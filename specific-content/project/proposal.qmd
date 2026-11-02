@@ -12,7 +12,7 @@ format:
 -   The first big step is the **proposal**, which you build in three milestones:
     1.  **Data** (Fri, Oct 16, 5:00 pm): choose your data and set up a documented `data/` folder with a README.
     2.  **Introduction** (Fri, Oct 23, 5:00 pm): write the introduction of your paper in Quarto, ending with your research questions.
-    3.  **Exploratory data analysis** (Wed, Nov 4, 5:00 pm): explore your data with visualizations, tables, and summary statistics, and write it up in your paper.
+    3.  **Exploratory data analysis** (~~Wed, Nov 4, 5:00 pm~~ Mon, Nov 9 1:30 pm): explore your data with visualizations, tables, and summary statistics, and write it up in your paper.
 -   You are **not** expected to fully answer your research questions yet. Modeling and inference come later in the term.
 -   Everything is submitted by pushing to your team's GitHub repo, `project-teamXX` (for example, `project-team07`). Whatever is on GitHub at the deadline is what gets graded.
 -   For inspiration, read a few winning papers from the USCLAP undergraduate project competition (links [below](#learning-from-example-papers)).

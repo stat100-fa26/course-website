@@ -8,7 +8,8 @@ format:
 
 [← Back to the project proposal overview](proposal.html)
 
-**Due Wednesday, November 4 at 5:00 pm**
+~~Due Wednesday, November 4 at 5:00 pm~~  
+**Monday, November 9 1:30 pm**
 
 With your data ready and your questions set, it is time to explore. By this point in the term we will have covered exploratory data analysis (EDA). In this milestone, your team completes all of the EDA for your project and writes it up in your paper. When you are done, your paper will contain the complete proposal: introduction, data, and exploration.
 
