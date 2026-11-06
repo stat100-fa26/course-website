@@ -1,0 +1,13 @@
+---
+title: "Reading for Lecture 11b"
+format: html
+---
+
+- [ ] [Bayes Rules!](https://www.bayesrulesbook.com/chapter-9) Chapter 9, this book is above the level of our class but the non-mathematical parts can be understandable. This is optional reading.
+
+
+
+
+
+
+

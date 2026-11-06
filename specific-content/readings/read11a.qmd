@@ -1,0 +1,12 @@
+---
+title: "Reading for Lecture 11a"
+format: html
+---
+
+- [ ] [OpenIntro Introduction to Modern Statistics](https://openintro-ims.netlify.app/model-slr) Chapter 7
+
+
+
+
+
+

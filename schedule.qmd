@@ -1,6 +1,7 @@
 ```{r}
 #| message: false
 #| echo: false
+#| warning: false
 library(tidyverse)
 library(gt)
 library(fontawesome)

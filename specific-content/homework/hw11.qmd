@@ -1,0 +1,12 @@
+---
+title: "Homework 11"
+format: html
+---
+
+This week's homework will give you an opportunity to practice to
+
+- construct prior models for simple regression parameters (slope and intercept)
+- fit regression models using frequentist and Bayesian principles
+- interpret model results
+
+
