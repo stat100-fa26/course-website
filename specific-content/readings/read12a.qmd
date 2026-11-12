@@ -1,0 +1,7 @@
+---
+title: "Reading for Lecture 12a"
+format: html
+---
+
+- [ ] [OpenIntro Introduction to Modern Statistics](https://openintro-ims.netlify.app/model-mlr) Chapter 8
+- [ ] [OpenIntro Introduction to Modern Statistics](https://openintro-ims.netlify.app/inf-model-mlr) Chapter 25

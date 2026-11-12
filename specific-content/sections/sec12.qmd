@@ -1,0 +1,13 @@
+---
+title: "Week 12 Section Activity"
+format: html
+---
+
+Please go to your assigned section, at the assigned time, at the assigned location. 
+
+During the section you will get to practice to:
+
+- split data into training and testing data
+- fit and interpret multiple regression models
+- compare models and choose one model
+- evaluate the chosen model on testing data

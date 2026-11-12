@@ -1,0 +1,6 @@
+---
+title: "Reading for Lecture 12b"
+format: html
+---
+
+- [ ] [Bayes Rules!](https://www.bayesrulesbook.com/chapter-10) Chapter 10 and [Chapter 11](https://www.bayesrulesbook.com/chapter-11), this book is above the level of our class but the non-mathematical parts can be understandable. This is optional reading.

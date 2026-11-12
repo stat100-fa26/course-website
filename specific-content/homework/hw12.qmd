@@ -1,0 +1,12 @@
+---
+title: "Homework 12"
+format: html
+---
+
+This week's homework will give you an opportunity to practice to
+
+- split data into training and testing data
+- check model assumptions with residual plots and transform variables when needed
+- fit and interpret multiple regression models using frequentist and Bayesian principles
+- compare models and choose one model
+- evaluate the chosen model on testing data
