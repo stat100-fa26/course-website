@@ -1,0 +1,230 @@
+---
+title: "Team Project Final Paper"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+---
+
+## TL;DR
+
+-   You will turn your proposal into a finished **short research paper** that answers your research questions using regression models.
+-   The final paper is due **Friday, December 4 at 5:00 pm** on GitHub, in your `project-teamXX` repository.
+-   The paper has a **title page** (title, names, and an abstract of up to 150 words), then **at most three pages** for the introduction, methods, results, and discussion, **including all figures and tables**. The title page, references, AI use statement, and optional appendix do **not** count toward the three pages.
+-   Start from your proposal and **revise it based on the feedback you received**. Most of your exploratory analysis will need to be shortened to make room for your results.
+-   Your paper should be in `paper/paper.qmd`, render to PDF without errors, and be fully reproducible from the raw data. All of your code stays in the `.qmd` file; it just doesn't show in the rendered paper.
+-   The [AI use policy](proposal.qmd#using-ai-tools) from the proposal still applies. Your [AI use statement](proposal.qmd#ai-use-statement) must name the specific AI models you used.
+
+## Overview
+
+In the proposal, you chose your data, wrote an introduction, and explored your data carefully. You described what you saw in your sample, but you could not yet say whether those patterns are likely to hold beyond it.
+
+Since then, you have learned how to do exactly that with linear and logistic regression: how to estimate quantities with confidence or credible intervals, how to test hypotheses, and how to evaluate a model. In this final part of the project, you will use those tools to answer your research questions, and you will turn your proposal into a finished paper.
+
+The final paper follows the format of the USCLAP papers you read at the start of the project. Now is a good time to go back to one or two of those [winning papers](https://www.causeweb.org/usproc/projects/winners) and the [USCLAP report template](https://www.causeweb.org/usproc/report-template-USCLAP). This time, pay attention to their **Methods**, **Results**, and **Discussion** sections: how they describe their methods without showing any code, how they report estimates and intervals, and how they explain what their results mean and what they don't.
+
+As a reminder, I may nominate up to three of the strongest papers from our class to submit to USCLAP. The format below matches USCLAP's, so a nominated paper will need very little extra work. But the goal of this project is still learning data science, and that is what you are graded on.
+
+## What the final paper looks like
+
+### Format
+
+| Part of the paper | Counts toward the 3 pages? |
+|------------------------------------|------------------------------------|
+| Title page: title, team members' names, and abstract (on its own page) | No |
+| Introduction, Methods, Results, Discussion | **Yes** |
+| All figures and tables in those sections | **Yes** |
+| References | No |
+| AI use statement | No |
+| Appendix (optional, up to 5 pages) | No |
+
+-   The main text (everything marked "Yes" above) is **at most three pages**, in 11 or 12 point font, single-spaced, with 1-inch margins.
+-   The parts that don't count come after the main text, in this order: references, AI use statement, appendix.
+-   The paper renders to **PDF** from `paper/paper.qmd`.
+
+Three pages is not much space. You will have to choose what to include, and making those choices well is part of the assignment. A focused paper that answers its questions clearly is better than a crowded paper that tries to show everything you did.
+
+### Code: write it, don't show it
+
+All of your analysis is done in code, and that code lives in `paper/paper.qmd` (and your cleaning code in `data/clean-data.qmd`). What changes is what the reader sees. Set your code chunks so that only their results (figures, tables, numbers) appear in the rendered PDF, never the code itself or raw R output. Like the USCLAP winners, your paper should read like a journal article, while anyone who opens your repository can see and rerun every step.
+
+### Checking your word count
+
+The abstract can be at most 150 words. To count words in RStudio, install the `wordcountaddin` package once:
+
+``` r
+# install.packages("remotes")
+remotes::install_github("benmarwick/wordcountaddin")
+```
+
+Then, in `paper.qmd`, highlight the text of your abstract and choose **Addins → Word count** from the RStudio toolbar. The count appears in the Viewer pane. If you don't highlight anything, it counts the whole document. You can also run `wordcountaddin::text_stats("paper/paper.qmd")` in the Console.
+
+### Sections
+
+Your paper should have the sections below, each with a heading. You may use subsections (for example, "Data" and "Analysis" under Methods) if they help the reader.
+
+**1. Title and abstract**
+
+Give your paper an informative title that tells the reader what you studied, not just the topic. The abstract is a single paragraph of **no more than 150 words** that summarizes the whole paper: one or two sentences each on the background, the data and methods, the main results, and the conclusion. Write the abstract last.
+
+**2. Introduction**
+
+This is the introduction from your proposal, revised based on the feedback you received. It should still move from the big picture to your specific research questions and end by stating them. Your research questions should be the ones you set in your proposal. Don't rewrite them to fit the results you got: a clear answer of "we found little evidence" to a good question is worth more than a question changed to match the results.
+
+**3. Methods**
+
+The Methods section tells the reader how you got your data and how you analyzed it. It has two parts:
+
+-   **Data.** Condense the Data section of your proposal. Describe where the data comes from, how it was collected, what one observation represents, the variables you use (with meaningful names), and the final sample size. Include details that matter for interpreting your results, such as how the sample was chosen and whether the study was an experiment or observational.
+
+    Keep your description of data cleaning **brief and high-level.** Mention only the decisions a reader needs to understand your results. For example: which observations you removed and why, how you handled missing values, how you grouped categories, or how you coded a categorical variable for your model (for example, "smoking status was coded 1 for current smokers and 0 otherwise, so non-smokers are the reference group"). Do not walk through every step of your code ("we created a new variable, then renamed it, then filtered..."). The step-by-step version lives in your cleaning code and data README.
+
+-   **Analysis.** Describe the models you fit and why. For example: "A linear regression model was fit with life expectancy as the response and median household income and region as predictors, with the Northeast as the reference region." Say whether you used a frequentist or Bayesian approach (or both), and for a Bayesian model, describe your priors. Describe the model, not the R functions you used. Cite R and the package you used to fit your models (see [Citing software](#citing-software)).
+
+**4. Results**
+
+The Results section reports what you found, in two parts:
+
+-   **Descriptive results.** Begin with a brief description of your sample and the key patterns from your exploratory analysis. This is a much shorter version of your proposal's EDA: keep only the one or two figures or tables that best set up your research questions. Other figures can go in the appendix.
+-   **Modeling and inference.** Then report the results of your models for each research question: coefficient estimates, confidence or credible intervals, and p-values or posterior probabilities where relevant, along with their interpretation in context. Present model results in a neatly formatted table rather than raw output. Briefly report how you evaluated your model (see [Modeling and inference](#modeling-and-inference)).
+
+The Results section reports findings; it does not yet explain what they mean for the bigger picture. Save that for the Discussion.
+
+**5. Discussion**
+
+Return to your research questions and answer them, using specific results to support each answer. Then step back:
+
+-   How do your findings relate to what you learned from the sources in your introduction? Do they agree, disagree, or add something new?
+-   What are the **limitations** of your study? Think about how the data was collected, who or what is (and isn't) represented, missing data, variables you didn't have, and whether the assumptions of your model are reasonable.
+-   What are the **ethical considerations**? Use the fairness questions from model evaluation (see below) and discuss them in the context of your project: possible **biases** in the data or analysis, whether your model is **fair**, and who could be affected, helped, or harmed by your results or by how they might be used.
+-   What would you or others need to do next to learn more?
+
+End with one or two sentences that sum up your main finding.
+
+**6. References**
+
+Generated by Quarto from `paper/references.bib`. Every source cited in the text should appear here, and every reference here should be cited in the text. This includes R and the package you used to fit your models.
+
+**7. AI use statement**
+
+A short statement describing how your team did or did not use generative AI tools in this project, following the [AI use policy](proposal.qmd#using-ai-tools) and the [guidance on writing the statement](proposal.qmd#ai-use-statement). **Name the specific model and version you used**, not just the company or app. For example, write "Claude Opus 5.5" rather than "Claude," or the exact GPT model rather than "ChatGPT." If you did not use AI, say so.
+
+**8. Appendix (optional)**
+
+Up to five pages of supporting material, such as additional figures, tables, or model checks. A reader should be able to understand your paper without the appendix, so put nothing essential there. If you include an appendix, refer to it from the main text (for example, "see Appendix Figure A1").
+
+## Modeling and inference {#modeling-and-inference}
+
+This is the main new work in the final paper. Answer your research questions with the **regression models** we have learned in class: **linear regression** for a numerical response and **logistic regression** for a binary response. You may fit your models with a frequentist approach, a Bayesian approach, or both.
+
+Every research question in your introduction should be addressed by at least one model, even if the answer turns out to be "we did not find strong evidence" or "the data can't tell us."
+
+As you report your results:
+
+-   **Interpret in context.** Don't just say the slope is 0.42. Say what it means: "For each additional hour of sleep, the expected number of poor mental health days was 0.42 lower, holding age and income constant."
+-   **Report uncertainty.** Always pair an estimate with a confidence or credible interval. A p-value or posterior probability on its own is not enough.
+-   **Match your conclusions to your study design.** At the level of this course, you can draw causal conclusions (that one variable *causes* changes in another) from randomized experiments. If your data is observational, describe associations rather than causes. Similarly, you can only generalize to a larger population if your sample represents it, so be careful about who your results apply to.
+-   **Evaluate your model.** Use the model evaluation steps from class. Check whether your model's assumptions are reasonable for your data, and report this briefly (supporting plots can go in the appendix). Ask whether your model is **fair**: How were the data collected? By whom, and for what purpose? How might the analysis, or the data collection itself, affect individuals and society? What **biases** might be built into the data or the analysis? Bring your answers into the Discussion.
+-   **Results that aren't "significant" are still results.** If you find little evidence of a relationship, that is a legitimate finding. Report it honestly and discuss it. Do not change your questions or your data just to get a significant result.
+
+## Citing software {#citing-software}
+
+Cite **R** and **the package you used to fit your models**. For example, if you fit Bayesian models with `rstanarm`, cite `rstanarm`. You do not need to cite packages you used only for data wrangling, plotting, or formatting, such as the tidyverse, `here`, or `knitr`.
+
+R can give you the citation for itself and for any package. Run these in the Console:
+
+``` r
+toBibtex(citation())            # citation for R
+toBibtex(citation("rstanarm"))  # citation for a package
+```
+
+Copy each result into `paper/references.bib`. R leaves the citation key blank, so **add a key** after the opening brace. For example, the output for `rstanarm` will look something like this (your version number and year may differ; use what R gives you):
+
+``` bibtex
+@Misc{rstanarm,
+  title = {rstanarm: {Bayesian} applied regression modeling via {Stan}.},
+  author = {Ben Goodrich and Jonah Gabry and Imad Ali and Sam Brilleman},
+  note = {R package version 2.32.1},
+  year = {2024},
+  url = {https://mc-stan.org/rstanarm/},
+}
+```
+
+Here `rstanarm` is the key you added. Do the same for R's citation, for example with the key `R-base`. You can then cite it in your text like any other reference, for example: "Models were fit in R [@R-base] using the rstanarm package [@rstanarm]." Mention the software once, in the Methods section, and describe everything else in terms of the models rather than the code.
+
+## Figures, tables, and writing
+
+The expectations from the proposal still apply. In short:
+
+-   Every figure and table is numbered, has a caption and readable labels, and is discussed in the text.
+-   Model results go in formatted tables, not raw R output.
+-   No code appears in the rendered paper (though all of it lives in your `.qmd` files).
+-   Describe what you did, not the functions you used.
+
+A few additional notes for the final paper:
+
+-   **Make every sentence count.** Cut repetition, filler, and anything that doesn't help answer your research questions.
+-   **Write for a statistician who is new to your topic.** Define terms from your subject area, but you don't need to explain what a confidence interval is.
+-   **Connect the sections.** Even though you wrote the paper in pieces, it should read as one story. Make sure the questions in the introduction, the methods, the results, and the discussion all line up.
+-   **Proofread.** Read the whole rendered PDF out loud as a team before you submit.
+
+## Your repository
+
+By the deadline, your repository should contain everything needed to reproduce your paper from scratch:
+
+```
+project-teamXX/
+├── .gitignore
+├── README.md                  # updated description of your project and team
+├── project-teamXX.Rproj
+├── data/
+│   ├── README.md              # updated to match your final data and cleaning
+│   ├── raw/
+│   ├── processed/
+│   └── clean-data.qmd
+└── paper/
+    ├── paper.qmd
+    └── references.bib
+```
+
+-   **Starting from the raw data**, someone should be able to run your cleaning code and then render `paper.qmd` to get your PDF, with no errors and no manual steps.
+-   **Update both READMEs.** If your cleaning or variables changed since the proposal, the data README should reflect that.
+-   **Do not commit the rendered PDF** (or any other rendered output). Commit only the source files; I will render your paper from them. Committing rendered files leads to merge conflicts, so add them to your `.gitignore`.
+
+## Checklist
+
+**Content**
+
+-   [ ] Informative title and an abstract of 150 words or fewer (checked with the word count add-in)
+-   [ ] Introduction revised based on feedback, ending with your research questions
+-   [ ] Methods section describing the data (with brief, high-level cleaning) and the models
+-   [ ] Coding of categorical variables and reference groups stated where relevant
+-   [ ] Results section with a brief description of the sample and the results of your models
+-   [ ] Every research question addressed with at least one regression model
+-   [ ] Estimates reported with intervals and interpreted in context
+-   [ ] Model evaluated, including assumptions and fairness
+-   [ ] Conclusions match the study design (association vs. causation, who results apply to)
+-   [ ] Discussion that answers the research questions, connects to the literature, and addresses limitations and ethical considerations
+-   [ ] R and your model-fitting package cited
+-   [ ] References rendered from `references.bib`
+-   [ ] AI use statement naming the specific models used
+
+**Format**
+
+-   [ ] Title page contains only the title, team members' names, and abstract
+-   [ ] Main text, including all figures and tables, is three pages or fewer
+-   [ ] Every figure and table is numbered, captioned, and discussed in the text
+-   [ ] No code or raw R output in the rendered paper
+-   [ ] Appendix (if any) is five pages or fewer and referred to in the text
+
+**Repository**
+
+-   [ ] `paper/paper.qmd` renders to PDF without errors
+-   [ ] Rendered PDF and other rendered output not committed
+-   [ ] Cleaning code runs from the raw data without errors
+-   [ ] Data README and top-level README updated
+-   [ ] Everything committed and pushed to GitHub by **Friday, December 4 at 5:00 pm**
+
+## Working as a team
+
+Everything from the proposal still applies: everyone contributes, everyone commits, and everyone should be able to explain every part of the paper, including the models. With one deadline and a lot to do, set internal deadlines for your team. For example, aim to finish the analysis first, then the draft, so that you have a few days left to revise, cut, and proofread together. If you get stuck, come to office hours early.
