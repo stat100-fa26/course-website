@@ -11,7 +11,7 @@ format:
 -   You will turn your proposal into a finished **short research paper** that answers your research questions using regression models.
 -   The final paper is due **Friday, December 4 at 5:00 pm** on GitHub, in your `project-teamXX` repository.
 -   The paper has a **title page** (title, names, and an abstract of up to 150 words), then **at most three pages** for the introduction, methods, results, and discussion, **including all figures and tables**. The title page, references, AI use statement, and optional appendix do **not** count toward the three pages.
--   Start from your proposal and **revise it based on the feedback you received**. Most of your exploratory analysis will need to be shortened to make room for your results.
+-   **You are responsible for the whole project.** Any feedback you received on Milestones 1, 2, or 3 must be addressed in the final version. Most of your exploratory analysis will also need to be shortened to make room for your results.
 -   Your paper should be in `paper/paper.qmd`, render to PDF without errors, and be fully reproducible from the raw data. All of your code stays in the `.qmd` file; it just doesn't show in the rendered paper.
 -   The [AI use policy](proposal.qmd#using-ai-tools) from the proposal still applies. Your [AI use statement](proposal.qmd#ai-use-statement) must name the specific AI models you used.
 
@@ -24,6 +24,12 @@ Since then, you have learned how to do exactly that with linear and logistic reg
 The final paper follows the format of the USCLAP papers you read at the start of the project. Now is a good time to go back to one or two of those [winning papers](https://www.causeweb.org/usproc/projects/winners) and the [USCLAP report template](https://www.causeweb.org/usproc/report-template-USCLAP). This time, pay attention to their **Methods**, **Results**, and **Discussion** sections: how they describe their methods without showing any code, how they report estimates and intervals, and how they explain what their results mean and what they don't.
 
 As a reminder, I may nominate up to three of the strongest papers from our class to submit to USCLAP. The format below matches USCLAP's, so a nominated paper will need very little extra work. But the goal of this project is still learning data science, and that is what you are graded on.
+
+## Addressing feedback
+
+The final version is graded as a whole, not just the new parts. **Any feedback I gave you on Milestone 1 (data), Milestone 2 (introduction), or Milestone 3 (exploratory data analysis) must be fixed by the final deadline.** That includes feedback on your data folder, READMEs, and cleaning code, not only on the paper. Feedback that was not addressed will count against the final grade, even if that milestone has already been graded.
+
+Before you start on the new sections, go back through the feedback on each milestone as a team, make a list of everything you need to fix, and decide who will fix what.
 
 ## What the final paper looks like
 
@@ -196,6 +202,7 @@ project-teamXX/
 **Content**
 
 -   [ ] Informative title and an abstract of 150 words or fewer (checked with the word count add-in)
+-   [ ] All feedback from Milestones 1, 2, and 3 addressed (paper, data folder, READMEs, and code)
 -   [ ] Introduction revised based on feedback, ending with your research questions
 -   [ ] Methods section describing the data (with brief, high-level cleaning) and the models
 -   [ ] Coding of categorical variables and reference groups stated where relevant
