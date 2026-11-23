@@ -18,8 +18,8 @@ course:
   midterm-location: location TBD
   proposal: Nov 4th at 5 pm
   final-submission: Dec 4th at 5 pm
-  final-exam: date and time TBD
-  final-exam-location: location TBD
+  final-exam: Dec 16, 2026 at 9 am
+  final-exam-location: Northwest_B103
 
 instructor:
   name: "Dr. Mine Dogucu"
@@ -29,7 +29,7 @@ instructor:
   office-hours: "T 1:30 - 2:30 pm & R 4:00 - 5:00 pm in person and online"
   office: "Maxwell-Dworkin 241"
   alt: A headshot of a woman with curly, short hair with green eyes and small almost-round glasses.
-  
+  zoom: https://harvard.zoom.us/j/95575106684
   
 preceptor: 
   name: Julie Vu
