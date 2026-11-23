@@ -29,9 +29,6 @@ website:
     - icon: github
       href: "{{< var course.github-org >}}"
       aria-label: "GitHub Organization"
-    - icon: robot
-      href: "{{< var course.classchat >}}"
-      aria-label: "Class Chat"
     - icon: patch-question
       href: "{{< var course.discussion >}}"
       aria-label: "Discussion"
