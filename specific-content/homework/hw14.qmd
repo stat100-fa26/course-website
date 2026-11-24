@@ -1,0 +1,11 @@
+---
+title: "Homework 14"
+format: html
+---
+
+This week's homework will give you an opportunity to practice to
+
+- split data into training and testing data
+- fit and interpret logistic regression models
+- compute predicted probabilities and classify with a cutoff
+- evaluate the chosen model on testing data

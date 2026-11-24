@@ -1,0 +1,7 @@
+---
+title: "Reading for Lecture 14a"
+format: html
+---
+
+- [ ] [OpenIntro Introduction to Modern Statistics](https://openintro-ims.netlify.app/model-logistic) Chapter 9
+- [ ] [OpenIntro Introduction to Modern Statistics](https://openintro-ims.netlify.app/inf-model-logistic) Chapter 26
